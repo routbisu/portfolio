@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+@import './reset.scss';
+@import './index.scss';
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main-container {
+  .main-menu {
+    .corner-home {
+      width: 130px;
+      height: 110px;
+      background: url('../images/profile-0.jpeg') no-repeat;
+      background-size: cover;
+      // float: left;
+    }
+
+    .horizontal-link {
+      width: 130px;
+      height: 110px;
+      // float: left;
+      position: relative;
+      cursor: pointer;
+      // background: url('../images/profile-0.jpeg') no-repeat;
+      background-size: cover;
+      // margin-top: 1px;
+
+      .content {
+        background: rgba(255, 255, 255, 0.88);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        .text {
+          color: $primary-color;
+          font-weight: 700;
+          text-transform: uppercase;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          letter-spacing: 0.1em;
+        }
+
+        &:hover {
+          background: rgba(69, 116, 217, 0.88);
+          transition: 0.5s;
+          .text {
+            color: $white;
+          }
+        }
+      }
+    }
+
+    .link-1 {
+      background: url('../images/profile-1.jpeg') no-repeat;
+      background-size: cover;
+    }
+
+    .link-2 {
+      background: url('../images/profile-2.jpeg') no-repeat;
+      background-size: cover;
+    }
+
+    .link-3 {
+      background: url('../images/profile-3.jpeg') no-repeat;
+      background-size: cover;
+    }
+
+    .link-4 {
+      background: url('../images/profile-4.jpeg') no-repeat;
+      background-size: cover;
+    }
+
+    .link-5 {
+      background: url('../images/profile-5.jpeg') no-repeat;
+      background-size: cover;
+    }
+  }
+}
