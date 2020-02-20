@@ -243,7 +243,11 @@ const App = () => {
                   <span>facebook.com/routbisu</span>
                 </div>
               </a>
-              <a href="" target="_blank" className="horizontal-section">
+              <a
+                href="https://drive.google.com/open?id=16EAosa5CZatP9SRwH7U48j9wZBCsqnDJ"
+                target="_blank"
+                className="horizontal-section"
+              >
                 <div className="content">
                   <div>
                     <img src={DriveLogo} alt="Facebook" />
@@ -251,7 +255,11 @@ const App = () => {
                   <span>Download Resume</span>
                 </div>
               </a>
-              <a href="" target="_blank" className="horizontal-section">
+              <a
+                href="https://drive.google.com/open?id=1KfA850p2aK9XOx7oX-3MbkRHeieTs_r6"
+                target="_blank"
+                className="horizontal-section"
+              >
                 <div className="content">
                   <div>
                     <img src={DriveLogo} alt="Facebook" />
