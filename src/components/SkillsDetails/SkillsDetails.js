@@ -22,7 +22,7 @@ const SkillsDetails = () => {
         <span>Git / Bitbucket</span>
       </p>
       <h2>Intermediate</h2>
-      <p className="skills-list">
+      <p className="skills-list orange">
         <span>Angular</span>
         <span>ASP.Net</span>
         <span>SQL Server</span>
@@ -32,7 +32,7 @@ const SkillsDetails = () => {
         <span>PostgreSQL</span>
       </p>
       <h2>Beginner</h2>
-      <p className="skills-list">
+      <p className="skills-list green">
         <span>React Native</span>
         <span>GoLang</span>
         <span>Docker</span>

@@ -22,4 +22,16 @@
       display: inline-block;
     }
   }
+
+  p.orange {
+    span {
+      background: #eb5f3a;
+    }
+  }
+
+  p.green {
+    span {
+      background: green;
+    }
+  }
 }
