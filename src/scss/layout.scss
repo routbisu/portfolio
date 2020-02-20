@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
 @import './reset.scss';
 @import './index.scss';
 
 * {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .main-container {
@@ -18,19 +18,16 @@
       height: 110px;
       background: url('../images/profile-0.jpeg') no-repeat;
       background-size: cover;
-      // float: left;
+      background-position: center center;
       flex: 1;
     }
 
     .vertical-link {
       width: 130px;
       height: 110px;
-      // float: left;
       position: relative;
       cursor: pointer;
-      // background: url('../images/profile-0.jpeg') no-repeat;
       background-size: cover;
-      // margin-top: 1px;
       flex: 1;
 
       .content {
@@ -83,6 +80,363 @@
     .link-5 {
       background: url('../images/profile-5.jpeg') no-repeat;
       background-size: cover;
+    }
+  }
+
+  .main-content {
+    padding-left: 130px;
+
+    .right-section {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      height: 100%;
+      width: calc(100% - 130px);
+
+      .vertical-section {
+        position: relative;
+        flex: 1;
+
+        .text {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          display: block;
+          padding-left: 45px;
+          font-weight: 700;
+          font-size: 42px;
+
+          span {
+            color: $primary-color;
+          }
+        }
+      }
+
+      .skills-section {
+        display: flex;
+        .horizontal-section {
+          position: relative;
+          flex: 2;
+
+          .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+
+            img {
+              width: 60%;
+            }
+
+            span {
+              font-weight: 600;
+              font-size: 15px;
+              color: $secondary-color;
+              text-align: center;
+            }
+          }
+
+          .wide {
+            img {
+              width: 100%;
+            }
+          }
+
+          &:nth-child(odd) {
+            background: $bg-grey-light;
+          }
+
+          &:nth-child(even) {
+            background: $primary-color-bg-light;
+          }
+        }
+
+        .more {
+          background: url('../images/profile-1.jpeg') no-repeat !important;
+          background-size: cover !important;
+          color: $white;
+          font-weight: 700;
+          text-transform: uppercase;
+          flex: 1.3;
+
+          .wrapper {
+            background: rgba(69, 116, 217, 0.88);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+
+      .projects-section {
+        display: flex;
+        .horizontal-section {
+          position: relative;
+          flex: 3;
+
+          .normal-text-wrapper {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+            .normal-text {
+              padding: 15px;
+              background: rgba(69, 116, 217, 0.88);
+              color: $white;
+              position: absolute;
+              width: 100%;
+              height: 100%;
+
+              h2 {
+                text-transform: uppercase;
+                font-size: 14px;
+              }
+              p {
+                padding-top: 5px;
+                font-size: 13px;
+                line-height: 1.4em;
+              }
+            }
+          }
+
+          .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 90%;
+
+            span {
+              display: inline-block;
+              padding-top: 5px;
+              font-weight: 600;
+              font-size: 12px;
+              color: $white;
+              text-align: center;
+              text-transform: none;
+            }
+          }
+
+          .wide {
+            img {
+              width: 100%;
+            }
+          }
+
+          &:nth-child(odd) {
+            .normal-text-wrapper {
+              background: url('../images/profile-2.jpeg') no-repeat;
+              background-size: cover;
+            }
+          }
+
+          &:nth-child(even) {
+            .normal-text-wrapper {
+              background: url('../images/profile-1.jpeg') no-repeat;
+              background-size: cover;
+            }
+          }
+        }
+
+        .more {
+          background: url('../images/profile-1.jpeg') no-repeat !important;
+          background-size: cover !important;
+          color: $white;
+          font-weight: 700;
+          text-transform: uppercase;
+          cursor: pointer;
+          flex: 2;
+          .wrapper {
+            background: rgba(69, 116, 217, 0.88);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+
+      .timeline-section {
+        display: flex;
+        .horizontal-section {
+          position: relative;
+          flex: 3;
+
+          .normal-text-wrapper {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+            .normal-text {
+              padding: 15px;
+              color: $white;
+              position: absolute;
+              width: 100%;
+              height: 100%;
+
+              h2 {
+                text-transform: uppercase;
+                font-size: 14px;
+              }
+              h3 {
+                padding-top: 8px;
+                font-size: 14px;
+                font-weight: 400;
+              }
+              h4 {
+                padding-top: 8px;
+                font-size: 12px;
+                font-weight: 400;
+              }
+              p {
+                margin-top: 7px;
+                padding: 5px;
+                font-size: 11px;
+                line-height: 1.4em;
+                background: $white;
+                color: $primary-color;
+              }
+            }
+          }
+
+          .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 90%;
+
+            span {
+              display: inline-block;
+              padding-top: 5px;
+              font-weight: 600;
+              font-size: 12px;
+              color: $white;
+              text-align: center;
+              text-transform: none;
+            }
+          }
+
+          .wide {
+            img {
+              width: 100%;
+            }
+          }
+
+          &:nth-child(odd) {
+            .normal-text-wrapper {
+              background: url('../images/job-1.jpeg') no-repeat;
+              background-size: cover;
+              .normal-text {
+                background: rgba(69, 116, 217, 0.88);
+              }
+            }
+          }
+
+          &:nth-child(even) {
+            .normal-text-wrapper {
+              background: url('../images/job-2.jpg') no-repeat;
+              background-size: cover;
+              .normal-text {
+                background: rgba(69, 116, 217, 0.88);
+              }
+            }
+          }
+
+          &:last-child {
+            .normal-text-wrapper {
+              background: url('../images/grad.jpeg') no-repeat;
+              background-size: cover;
+              .normal-text {
+                background: rgba(0, 0, 0, 0.5);
+              }
+            }
+          }
+        }
+      }
+
+      .intro-section {
+        background: $bg-grey;
+      }
+
+      .links-section {
+        display: flex;
+        .horizontal-section {
+          position: relative;
+          flex: 2;
+          cursor: pointer;
+
+          .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+
+            img {
+              width: 30%;
+            }
+
+            span {
+              display: inline-block;
+              margin-top: 10px;
+              font-weight: 600;
+              font-size: 12px;
+              color: $secondary-color;
+              text-align: center;
+            }
+          }
+
+          &:nth-child(odd) {
+            background: $bg-grey-light;
+          }
+
+          &:nth-child(even) {
+            background: $primary-color-bg-light;
+          }
+        }
+      }
+
+      .contacts-section {
+        display: flex;
+
+        .horizontal-section {
+          position: relative;
+          flex: 2;
+
+          .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+
+            img {
+              width: 30%;
+              padding: 5px;
+            }
+
+            span {
+              display: inline-block;
+              margin-top: 10px;
+              font-weight: 600;
+              font-size: 13px;
+              color: $secondary-color;
+              text-align: center;
+            }
+          }
+
+          &:nth-child(even) {
+            background: $bg-grey-light;
+          }
+
+          &:nth-child(odd) {
+            background: $primary-color-bg-light;
+          }
+        }
+      }
     }
   }
 }
