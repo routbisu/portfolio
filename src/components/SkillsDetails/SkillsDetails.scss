@@ -1,0 +1,25 @@
+@import '../../scss/index.scss';
+
+.skills-details-container {
+  padding: 20px;
+
+  h2 {
+    color: $secondary-color;
+    font-size: 15px;
+  }
+
+  p.skills-list {
+    padding: 20px 0px;
+    padding-top: 10px;
+
+    span {
+      background: $primary-color;
+      color: $white;
+      padding: 10px 15px;
+      font-size: 13px;
+      margin-top: 5px;
+      margin-right: 5px;
+      display: inline-block;
+    }
+  }
+}
