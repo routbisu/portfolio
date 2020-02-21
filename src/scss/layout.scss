@@ -233,6 +233,7 @@
 
       .projects-section {
         display: flex;
+
         .horizontal-section {
           position: relative;
           flex: 3;
@@ -462,6 +463,11 @@
           &:nth-child(even) {
             background: $primary-color-bg-light;
           }
+
+          &:hover {
+            background: rgba(69, 116, 217, 0.15);
+            transition: 0.3s;
+          }
         }
       }
 
@@ -500,6 +506,11 @@
 
           &:nth-child(odd) {
             background: $primary-color-bg-light;
+          }
+
+          &:hover {
+            background: rgba(69, 116, 217, 0.15);
+            transition: 0.3s;
           }
         }
       }

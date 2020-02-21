@@ -154,9 +154,9 @@ const App = () => {
               <div className="horizontal-section">
                 <div className="normal-text-wrapper">
                   <div className="normal-text">
-                    <h2>Staff Engineer</h2>
+                    <h2>Technical Lead</h2>
                     <p>Sep 2018 - June 2019</p>
-                    <h3>Sandisk (Western Digital)</h3>
+                    <h3>SanDisk (Western Digital)</h3>
                     <h4>Bangalore, India</h4>
                   </div>
                 </div>
@@ -164,7 +164,7 @@ const App = () => {
               <div className="horizontal-section">
                 <div className="normal-text-wrapper">
                   <div className="normal-text">
-                    <h2>Analyst Programmer</h2>
+                    <h2>Programmer Analyst</h2>
                     <p>Nov 2016 - Sep 2018</p>
                     <h3>Xceedance Consulting</h3>
                     <h4>Bangalore, India</h4>
@@ -184,7 +184,7 @@ const App = () => {
               <div className="horizontal-section">
                 <div className="normal-text-wrapper">
                   <div className="normal-text">
-                    <h2>Systems Engineer</h2>
+                    <h2>Software Engineer</h2>
                     <p>Oct 2011 - Feb 2016</p>
                     <h3>Infosys Limited</h3>
                     <h4>Hyderabad, India</h4>
@@ -244,7 +244,7 @@ const App = () => {
                 </div>
               </a>
               <a
-                href="https://drive.google.com/open?id=16EAosa5CZatP9SRwH7U48j9wZBCsqnDJ"
+                href="https://drive.google.com/open?id=1JgkaIXHlcH01ZVfYcWVgDlN-Yv6HXgnm"
                 target="_blank"
                 className="horizontal-section"
               >
