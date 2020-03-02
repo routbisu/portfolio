@@ -29,12 +29,21 @@ html {
   .main-menu {
     flex: 1;
     text-align: right;
-    padding-right: 10px;
+
     a {
       margin-left: 25px;
       color: $secondary-color;
       font-weight: 400;
       font-size: 1.1rem;
+    }
+
+    svg {
+      color: $secondary-color;
+      font-size: 1.3rem;
+    }
+
+    @media screen and (min-width: 501px) {
+      padding-right: 10px;
     }
   }
 }

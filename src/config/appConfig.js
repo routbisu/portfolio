@@ -1,6 +1,6 @@
 export const menuItems = [
-  { label: 'Projects', link: 'projects' },
-  { label: 'Skills', link: 'skills' },
-  { label: 'About', link: 'about' },
-  { label: 'Contact', link: 'contact' }
+  { key: 'PROJECTS', label: 'Projects', link: '/projects' },
+  { key: 'SKILLS', label: 'Skills', link: '/skills' },
+  { key: 'ABOUT', label: 'About', link: '/about' },
+  { key: 'CONTACT', label: 'Contact', link: '/contact' }
 ];

@@ -6,6 +6,12 @@ import './layout.scss';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { Link } from 'gatsby';
 import { menuItems } from '../config/appConfig';
+import {
+  faIceCream,
+  faGripLines,
+  faStream
+} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Layout = ({ children, heading }) => {
   return (
@@ -27,12 +33,15 @@ const Layout = ({ children, heading }) => {
             <img src={Logo} alt="Logo" />
           </Link>
         </div>
-        <div className="main-menu">
+        <div className="main-menu tablet-and-desktop-only">
           {menuItems.map(item => (
-            <Link to={`/${item.link}`} key={item.link}>
+            <Link to={item.link} key={item.key}>
               {item.label}
             </Link>
           ))}
+        </div>
+        <div className="main-menu mobile-only-strict">
+          <FontAwesomeIcon icon={faStream} />
         </div>
       </div>
       {children}

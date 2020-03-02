@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import './index.scss';
+import { Link } from 'gatsby';
+import { getLinkUrl } from '../services/commonService';
 
 const IndexPage = () => {
   return (
@@ -25,10 +27,12 @@ const IndexPage = () => {
               <br />I am a self-motivated, and self-taught programmer, driven to
               build amazing software that I am proud of.
             </p>
-            <button className="see-more animated flipInY">
-              <span>See my work</span>
-              <FontAwesomeIcon icon={faChevronRight} />
-            </button>
+            <Link to={getLinkUrl('PROJECTS')}>
+              <button className="see-more animated flipInY">
+                <span>See my work</span>
+                <FontAwesomeIcon icon={faChevronRight} />
+              </button>
+            </Link>
           </div>
 
           <div className="social-links">
