@@ -1,0 +1,75 @@
+@import './scss/reset.scss';
+@import './scss/index.scss';
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,300,400,600,700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css');
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+html {
+  font-size: 14px;
+}
+
+.layout-container {
+  .header {
+    position: relative;
+    z-index: 3;
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+
+    .logo-container {
+      img {
+        width: 40px;
+      }
+    }
+  }
+
+  .main-menu {
+    flex: 1;
+    text-align: right;
+    padding-right: 10px;
+    a {
+      margin-left: 25px;
+      color: $secondary-color;
+      font-weight: 400;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+.desktop-only {
+  display: none;
+  @media screen and (min-width: 801px) {
+    display: block;
+  }
+}
+
+.mobile-only {
+  display: block;
+  @media screen and (min-width: 801px) {
+    display: none;
+  }
+}
+
+.tablet-only {
+  display: none;
+  @media screen and (min-width: 450px) and (max-width: 800px) {
+    display: block;
+  }
+}
+
+.tablet-and-desktop-only {
+  display: none;
+  @media screen and (min-width: 450px) {
+    display: block;
+  }
+}
+
+.mobile-only-strict {
+  display: block;
+  @media screen and (min-width: 450px) {
+    display: none;
+  }
+}
