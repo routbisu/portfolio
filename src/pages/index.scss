@@ -76,11 +76,10 @@
       button.see-more {
         color: $secondary-color;
         background: transparent;
-        border: 1px solid darken($secondary-color, 59%);
-        padding: 11px 50px;
-        padding-bottom: 12px;
+        border: 2px solid darken($secondary-color, 59%);
+        padding: 18px 50px;
         border-radius: 3px;
-        font-weight: 100;
+        font-weight: 300;
         font-size: 1.2rem;
         cursor: pointer;
 

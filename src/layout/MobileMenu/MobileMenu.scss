@@ -1,0 +1,73 @@
+@import '../scss/';
+
+.mobile-menu-container {
+  svg.hamburger {
+    color: $secondary-color;
+    position: fixed;
+    right: 30px;
+    top: 32px;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: 0px;
+    left: 120px;
+    right: 0px;
+    height: 100%;
+    background: $white;
+    transition: 0.3s;
+
+    .logo-container {
+      position: relative;
+      padding: 15px;
+      padding-left: 20px;
+      height: 65px;
+
+      svg {
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: $primary-color;
+        font-size: 1.5rem;
+      }
+    }
+
+    .menu-section {
+      a {
+        display: block;
+        text-align: right;
+        color: $primary-color;
+        font-weight: 600;
+        font-size: 1.3rem;
+        padding: 25px 30px;
+        border-top: 1px dotted $secondary-color;
+
+        &:last-child {
+          padding-bottom: 25px;
+          border-bottom: 1px dotted $secondary-color;
+        }
+      }
+    }
+
+    .social-links {
+      text-align: right;
+      padding-top: 30px;
+
+      a {
+        display: inline-block;
+        padding-right: 25px;
+        padding-left: 0px;
+        svg {
+          font-size: 2.5rem;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  .menu-closed {
+    left: 600px;
+    transition: 0.3s;
+  }
+}
