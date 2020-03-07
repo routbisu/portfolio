@@ -107,6 +107,30 @@
           line-height: 2.8rem;
         }
       }
+
+      @media screen and (max-width: 330px) {
+        h1 {
+          font-size: 2.5rem;
+        }
+        p {
+          font-size: 1.5rem;
+          line-height: 2.2rem;
+        }
+      }
+
+      .slick-slider {
+        margin-bottom: 44px;
+        .slick-dots {
+          bottom: -15px;
+          button {
+            &::before {
+              color: $secondary-color;
+              background-size: contain !important;
+              font-size: 10px;
+            }
+          }
+        }
+      }
     }
   }
 }
