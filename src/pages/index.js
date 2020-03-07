@@ -27,8 +27,8 @@ const sliderContent = [
     understanding of user experience (UX) principles.
   </p>,
   <p className="animated fadeIn">
-    I am a Polyglot Programmer.
-    <br />I have exposure to microservices, cloud services, monolithic
+    I am a Fullstack Developer.
+    <br />I have worked with microservices, cloud services, monolithic
     applications, relational &amp; document databases.
   </p>,
   <p className="animated fadeIn">
