@@ -1,11 +1,16 @@
 @import '../scss/';
 
 .mobile-menu-container {
-  svg.hamburger {
-    color: $secondary-color;
+  .hamburger-container {
     position: fixed;
-    right: 30px;
-    top: 32px;
+    right: 0px;
+    top: 0px;
+    padding: 32px;
+
+    svg.hamburger {
+      color: $secondary-color;
+      font-size: 1.5rem;
+    }
   }
 
   .mobile-menu {
@@ -17,19 +22,26 @@
     background: $white;
     transition: 0.3s;
 
-    .logo-container {
+    .cross-container {
       position: relative;
-      padding: 15px;
-      padding-left: 20px;
-      height: 65px;
+      height: 71px;
 
-      svg {
+      .svg-container {
+        height: 65px;
+        display: inline-block;
+        width: auto;
         position: absolute;
-        right: 30px;
-        top: 50%;
-        transform: translateY(-50%);
-        color: $primary-color;
-        font-size: 1.5rem;
+        right: 0px;
+        width: 70px;
+
+        svg {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          color: $primary-color;
+          font-size: 1.8rem;
+        }
       }
     }
 

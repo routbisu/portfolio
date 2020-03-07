@@ -12,14 +12,15 @@ const MobileMenu = () => {
 
   return (
     <div className="mobile-menu-container mobile-only-strict">
-      <FontAwesomeIcon
-        icon={faStream}
-        className="hamburger"
-        onClick={() => setOpen(true)}
-      />
+      <div className="hamburger-container" onClick={() => setOpen(true)}>
+        <FontAwesomeIcon icon={faStream} className="hamburger" />
+      </div>
+
       <div className={`mobile-menu ${!open && 'menu-closed'}`}>
-        <div className="logo-container">
-          <FontAwesomeIcon icon={faTimes} onClick={() => setOpen(false)} />
+        <div className="cross-container">
+          <div className="svg-container" onClick={() => setOpen(false)}>
+            <FontAwesomeIcon icon={faTimes} />
+          </div>
         </div>
 
         <div className="menu-section">
