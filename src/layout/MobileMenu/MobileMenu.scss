@@ -1,14 +1,15 @@
 @import '../scss/';
 
 .mobile-menu-container {
-  .hamburger-container {
+  button.hamburger-container {
     position: fixed;
     right: 0px;
     top: 0px;
     padding: 32px;
+    background: transparent;
 
     svg.hamburger {
-      color: $secondary-color;
+      color: $primary-color;
       font-size: 1.5rem;
     }
   }
@@ -19,20 +20,22 @@
     left: 120px;
     right: 0px;
     height: 100%;
-    background: $white;
+    background: $highly-light-grey-bg;
+    border-left: 1px solid $light-grey-bg;
     transition: 0.3s;
 
     .cross-container {
       position: relative;
       height: 71px;
 
-      .svg-container {
+      button.svg-container {
         height: 65px;
         display: inline-block;
         width: auto;
         position: absolute;
         right: 0px;
         width: 70px;
+        background: transparent;
 
         svg {
           position: absolute;

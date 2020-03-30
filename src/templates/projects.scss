@@ -1,0 +1,113 @@
+@import '../layout/scss';
+
+.project-container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0px 22px;
+
+  display: flex;
+
+  .project-menu {
+    flex-basis: 240px;
+    .buttons {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: $black;
+
+      button.main-menu {
+        width: 100%;
+        text-align: left;
+        padding: 12px 16px;
+        background: $light-grey-bg;
+        margin-bottom: 1px;
+        cursor: pointer;
+
+        svg {
+          float: right;
+          font-size: 1.3rem;
+        }
+
+        &.active {
+          background: $primary-color;
+          color: $white;
+        }
+
+        &:hover:not(.active) {
+          color: $primary-color;
+        }
+      }
+    }
+
+    .project-list {
+      margin: 10px 0px;
+      a {
+        display: block;
+        padding: 13px 18px;
+        font-weight: 500;
+        font-size: 1rem;
+        color: $black;
+        display: flex;
+        align-items: center;
+
+        svg {
+          margin-left: 15px;
+          color: $primary-color;
+          font-size: 1rem;
+          display: none;
+        }
+
+        &:hover,
+        &.active {
+          color: $primary-color;
+          transition: 0.3s;
+          svg {
+            display: inherit;
+            transition: 0.3s;
+          }
+        }
+
+        &:hover {
+          background: $light-grey-bg;
+        }
+      }
+    }
+  }
+
+  .project-details {
+    flex: 1;
+    padding: 10px 20px;
+  }
+
+  @media screen and (max-width: 800px) {
+    display: block;
+
+    .project-menu {
+      text-align: right;
+      .buttons {
+        display: flex;
+
+        button.main-menu {
+          text-align: left;
+          padding: 15px 18px;
+          font-size: 1rem;
+          flex: 0.5;
+
+          svg {
+            display: none;
+          }
+
+          &.active {
+            background: $primary-color;
+            color: $white;
+          }
+        }
+
+        .project-list-tablet {
+          flex: 1;
+          order: 3;
+          margin: 0px 2px;
+        }
+      }
+    }
+  }
+}

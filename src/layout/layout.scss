@@ -1,6 +1,6 @@
 @import './scss/reset.scss';
 @import './scss/index.scss';
-@import url('https://fonts.googleapis.com/css?family=Raleway:100,300,400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,600,700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css');
@@ -20,32 +20,63 @@ html {
     padding: 20px 25px;
     display: flex;
     align-items: center;
+    max-width: 1400px;
+    margin: auto;
 
     .logo-container {
       img {
         width: 40px;
       }
     }
-  }
 
-  .main-menu {
-    flex: 1;
-    text-align: right;
+    .main-menu {
+      flex: 1;
+      text-align: right;
 
-    a {
-      margin-left: 25px;
-      color: $secondary-color;
-      font-weight: 400;
-      font-size: 1.1rem;
+      a {
+        margin-left: 10px;
+        color: $primary-color;
+        font-weight: 600;
+        font-size: 0.85rem;
+        padding: 8px 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.15rem;
+        &.active,
+        &:hover {
+          background: $primary-color;
+          color: $white;
+          border-radius: 2px;
+          transition: 0.3s;
+        }
+      }
+
+      svg {
+        color: $secondary-color;
+        font-size: 1.3rem;
+      }
+
+      @media screen and (min-width: 501px) {
+        padding-right: 10px;
+      }
     }
 
-    svg {
-      color: $secondary-color;
-      font-size: 1.3rem;
-    }
-
-    @media screen and (min-width: 501px) {
-      padding-right: 10px;
+    &.home {
+      .main-menu {
+        a {
+          color: $secondary-color;
+          border: 1px solid transparent;
+          &:hover {
+            background: transparent;
+            border: 1px solid $primary-color;
+          }
+        }
+      }
+      .mobile-menu {
+        background: $white;
+        svg.hamburger {
+          color: $secondary-color;
+        }
+      }
     }
   }
 }

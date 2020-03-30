@@ -40,7 +40,7 @@ const sliderContent = [
 
 const IndexPage = () => {
   return (
-    <Layout>
+    <Layout home={true}>
       <div className="home-container">
         <div className="video-container">
           <video autoPlay muted loop className="tablet-and-desktop-only">
@@ -69,10 +69,15 @@ const IndexPage = () => {
             <a
               href="https://www.linkedin.com/in/biswaranjanrout/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
-            <a href="https://github.com/routbisu" target="_blank">
+            <a
+              href="https://github.com/routbisu"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faGithub} />
             </a>
           </div>

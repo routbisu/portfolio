@@ -1,0 +1,65 @@
+@import '../../../layout/scss/';
+
+.dropdown-container {
+  position: relative;
+  cursor: pointer;
+
+  .select {
+    width: 100%;
+    background: $light-grey-bg;
+    color: $black;
+    text-align: left;
+    padding: 16.5px 18px;
+    font-size: 500;
+    font-size: 1rem;
+
+    svg {
+      width: 10px;
+      position: absolute;
+      right: 14px;
+      transition: transform ease 0.1s;
+      color: $primary-color;
+
+      &.open {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  .options {
+    position: absolute;
+    width: 100%;
+    background: $highly-light-grey-bg;
+    z-index: 1;
+    max-height: 280px;
+    overflow: auto;
+
+    button.option {
+      width: 100%;
+      background: none;
+      color: $primary-color;
+      padding: 15px;
+      border-top: 1px solid $white;
+      text-transform: capitalize;
+      text-align: left;
+      font-size: 1rem;
+    }
+  }
+
+  &.white {
+    .select {
+      background: $white;
+      color: $black;
+      border: 1px solid $light-grey-bg;
+    }
+
+    .options {
+      background: $white;
+
+      .option {
+        color: $black;
+        border: 1px solid $light-grey-bg;
+      }
+    }
+  }
+}

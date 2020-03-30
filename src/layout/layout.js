@@ -8,7 +8,7 @@ import { Link } from 'gatsby';
 import { menuItems } from '../config/appConfig';
 import MobileMenu from './MobileMenu/MobileMenu';
 
-const Layout = ({ children, heading }) => {
+const Layout = ({ children, heading, home }) => {
   return (
     <div className="layout-container">
       <Helmet>
@@ -22,15 +22,21 @@ const Layout = ({ children, heading }) => {
           content="Hi, I am Biswa. I am a Web Developer. I am a self-motivated, and self-taught programmer, driven to build amazing software that I am proud of."
         />
       </Helmet>
-      <div className="header">
+      <div className={`header ${home && 'home'}`}>
         <div className="logo-container">
           <Link to="/">
             <img src={Logo} alt="Logo" />
           </Link>
         </div>
         <div className="main-menu tablet-and-desktop-only">
+          {!home && <Link to="/">Home</Link>}
           {menuItems.map(item => (
-            <Link to={item.link} key={item.key}>
+            <Link
+              to={item.link}
+              key={item.key}
+              activeClassName="active"
+              partiallyActive={true}
+            >
               {item.label}
             </Link>
           ))}

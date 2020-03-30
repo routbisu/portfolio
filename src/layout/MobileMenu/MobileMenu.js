@@ -34,9 +34,9 @@ const MobileMenu = () => {
 
   return (
     <div className="mobile-menu-container mobile-only-strict">
-      <div className="hamburger-container" onClick={openMenu}>
+      <button className="hamburger-container" onClick={openMenu}>
         <FontAwesomeIcon icon={faStream} className="hamburger" />
-      </div>
+      </button>
 
       <div
         className={`mobile-menu ${!open && 'menu-closed'}`}
@@ -45,7 +45,7 @@ const MobileMenu = () => {
         }}
       >
         <div className="cross-container">
-          <div
+          <button
             className="svg-container"
             onClick={closeMenu}
             ref={elem => {
@@ -53,7 +53,7 @@ const MobileMenu = () => {
             }}
           >
             <FontAwesomeIcon icon={faTimes} />
-          </div>
+          </button>
         </div>
 
         <div
@@ -76,10 +76,15 @@ const MobileMenu = () => {
           <a
             href="https://www.linkedin.com/in/biswaranjanrout/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
-          <a href="https://github.com/routbisu" target="_blank">
+          <a
+            href="https://github.com/routbisu"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon icon={faGithub} />
           </a>
         </div>
