@@ -7,6 +7,7 @@ const Dropdown = ({
   options,
   onChange,
   defaultValue,
+  value,
   defaultText,
   hideSelectedOption
 }) => {
@@ -54,7 +55,7 @@ const Dropdown = ({
           menuOpen ? closeMenu() : openMenu();
         }}
       >
-        {selectedItem}
+        {value || selectedItem}
         <FontAwesomeIcon icon={faAngleDown} />
       </button>
       {menuOpen && (
