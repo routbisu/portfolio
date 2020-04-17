@@ -19,7 +19,7 @@
     top: 0px;
     left: 120px;
     right: 0px;
-    height: 100%;
+    height: 100vh;
     background: $highly-light-grey-bg;
     border-left: 1px solid $light-grey-bg;
     transition: 0.3s;
@@ -73,7 +73,7 @@
         display: inline-block;
         padding-right: 25px;
         padding-left: 0px;
-        svg {
+        svg.social {
           font-size: 2.5rem;
           color: $primary-color;
         }

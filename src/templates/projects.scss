@@ -73,11 +73,6 @@
     }
   }
 
-  .project-details {
-    flex: 1;
-    padding: 10px 20px;
-  }
-
   @media screen and (max-width: 800px) {
     display: block;
 
@@ -107,6 +102,52 @@
           order: 3;
           margin: 0px 2px;
         }
+      }
+    }
+  }
+
+  .project-details {
+    flex: 1;
+    padding: 20px 0px;
+
+    @media screen and (min-width: 801px) {
+      padding: 10px 30px;
+    }
+
+    .project-header {
+      h1 {
+        color: $primary-color;
+        font-size: 1.65rem;
+        font-weight: 500;
+      }
+
+      .project-logo {
+        float: right;
+        img {
+          height: 25px;
+        }
+        @media screen and (max-width: 500px) {
+          display: none;
+        }
+      }
+
+      .duration {
+        color: $black;
+        opacity: 0.8;
+        font-size: 1rem;
+        margin-top: 15px;
+        padding-left: 2px;
+        svg {
+          margin-right: 6px;
+          color: $primary-color;
+        }
+      }
+
+      .org-name {
+        font-weight: 600;
+        color: $black;
+        font-size: 1.1rem;
+        margin: 17px 0px;
       }
     }
   }

@@ -28,6 +28,7 @@
     "react-slick": "^0.25.2"
   },
   "devDependencies": {
+    "firebase-tools": "^8.0.2",
     "prettier": "^1.19.1"
   },
   "keywords": [
@@ -42,6 +43,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "deploy": "npm run build && mv public/index.html public/200.html && surge public --domain biswa.surge.sh",
+    "deploy-prod": "npm run build && firebase deploy",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "repository": {

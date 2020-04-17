@@ -4,7 +4,11 @@ import Layout from '../layout/layout';
 import { projects, projectTypes } from '../config/appConfig';
 import { Link } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDown, faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import {
+  faAngleDown,
+  faAngleRight,
+  faCalendarAlt
+} from '@fortawesome/free-solid-svg-icons';
 import Dropdown from '../components/common/Dropdown/Dropdown';
 
 const getSelectedProjectTitle = (projects, selectedProjSlug) => {
@@ -29,7 +33,20 @@ const ProjectTemplate = ({
     value: proj.title
   }));
 
-  const dropdownJsx = (
+  const getProjectInfo = () => {
+    let projectInfo = null;
+    projectTypes.forEach(projType => {
+      const found = projects[projType.type].find(
+        a => a.slug === selectedProjectSlug
+      );
+      if (found) {
+        projectInfo = found;
+      }
+    });
+    return projectInfo;
+  };
+
+  const ProjectsDropdown = () => (
     <Dropdown
       options={ddOptions}
       defaultValue={getSelectedProjectTitle(
@@ -40,16 +57,43 @@ const ProjectTemplate = ({
     />
   );
 
+  const ProjectHeader = () => {
+    // Get project header details
+    let projectInfo = getProjectInfo();
+
+    if (projectInfo) {
+      const { title, duration, org, logo } = projectInfo;
+      return (
+        <div className="project-header">
+          {logo && (
+            <div className="project-logo">
+              <img src={logo} alt={title} />
+            </div>
+          )}
+          <h1>{title}</h1>
+          {duration && (
+            <div className="duration">
+              <FontAwesomeIcon icon={faCalendarAlt} /> {duration}
+            </div>
+          )}
+          {org && <h3 className="org-name">{org}</h3>}
+        </div>
+      );
+    }
+    return null;
+  };
+
   return (
     <Layout heading={heading}>
       <div className="project-container">
         <div className="project-menu">
           <div className="buttons">
             {projectTypes.map(projType => (
-              <>
+              <React.Fragment key={projType.type}>
                 <button
-                  className={`main-menu ${selectedMenu === projType.type &&
-                    'active'}`}
+                  className={`main-menu ${
+                    selectedMenu === projType.type ? 'active' : ''
+                  }`}
                   onClick={() => setSelectedMenu(projType.type)}
                 >
                   {projType.label}
@@ -70,6 +114,7 @@ const ProjectTemplate = ({
                             href={project.slug}
                             target="_blank"
                             rel="noopener noreferrer"
+                            key={project.slug}
                           >
                             {project.title}
                             <FontAwesomeIcon icon={faAngleRight} />
@@ -78,8 +123,11 @@ const ProjectTemplate = ({
                           <Link
                             to={`/projects/${selProjType.slug}/${project.slug}`}
                             className={
-                              selectedProjectSlug === project.slug && 'active'
+                              selectedProjectSlug === project.slug
+                                ? 'active'
+                                : ''
                             }
+                            key={project.slug}
                           >
                             {project.title}
                             <FontAwesomeIcon icon={faAngleRight} />
@@ -88,19 +136,22 @@ const ProjectTemplate = ({
                       )}
                     </div>
                     <div className="project-list-tablet tablet-only">
-                      {dropdownJsx}
+                      <ProjectsDropdown />
                     </div>
                   </>
                 )}
-              </>
+              </React.Fragment>
             ))}
           </div>
           <div className="project-list-mobile mobile-only-strict">
-            {dropdownJsx}
+            <ProjectsDropdown />
           </div>
         </div>
 
-        <div className="project-details">{children}</div>
+        <div className="project-details">
+          <ProjectHeader />
+          {children}
+        </div>
       </div>
     </Layout>
   );

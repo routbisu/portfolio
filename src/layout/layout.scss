@@ -15,7 +15,10 @@ html {
 
 .layout-container {
   .header {
-    position: relative;
+    position: fixed;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
     z-index: 3;
     padding: 20px 25px;
     display: flex;
@@ -58,7 +61,10 @@ html {
       }
     }
 
+    background: $white;
+
     &.home {
+      background: transparent;
       .main-menu {
         a {
           color: $secondary-color;
@@ -74,6 +80,53 @@ html {
         svg.hamburger {
           color: $secondary-color;
         }
+      }
+    }
+
+    // background: $highly-light-grey-bg;
+  }
+
+  .main-content {
+    padding-top: 86px;
+  }
+
+  .article {
+    h1 {
+      color: $primary-color;
+      font-size: 1.65rem;
+      font-weight: 500;
+    }
+
+    h2 {
+      color: $primary-color;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-top: 17px;
+    }
+
+    p {
+      color: $grey-overlay-color;
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin-top: 15px;
+      color: $grey-overlay-color;
+      font-size: 1rem;
+      line-height: 1.8;
+      margin-left: 15px;
+      list-style: none;
+
+      li::before {
+        content: '\2713';
+        color: $primary-color;
+        font-weight: bold;
+        font-size: 0.9rem;
+        display: inline-block;
+        width: 1.5em;
+        margin-left: -1em;
       }
     }
   }

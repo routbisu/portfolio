@@ -1,3 +1,5 @@
+import WingsLogo from '../images/projects/wings-suite/wings-logo.png';
+
 export const menuItems = [
   {
     key: 'PROJECTS',
@@ -17,7 +19,13 @@ export const projectTypes = [
 
 export const projects = {
   WORK: [
-    { title: 'Wings Suite', slug: 'wings-suite' },
+    {
+      title: 'Wings Suite',
+      slug: 'wings-suite',
+      duration: 'Sept 2018 - June 2019',
+      org: 'Sandisk (Western Digital)',
+      logo: WingsLogo
+    },
     { title: 'XInsure', slug: 'xinsure' },
     { title: 'Instalment Billing', slug: 'instalment-billing' },
     { title: 'Obfuscation Engine', slug: 'obfuscation-engine' },

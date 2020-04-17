@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../layout/layout';
 import BgVideo from '../images/bg-video.webm';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faChevronRight, faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import './index.scss';
 import { Link } from 'gatsby';
@@ -23,18 +23,18 @@ const sliderContent = [
   </p>,
   <p className="animated fadeIn">
     I am a Frontend Developer.
-    <br />I have expertise on libraries like React, Vue &amp; Angular and a good
+    <br />I work with like React, Vue &amp; Angular and have a good
     understanding of user experience (UX) principles.
   </p>,
   <p className="animated fadeIn">
     I am a Fullstack Developer.
-    <br />I have worked with microservices, cloud services, monolithic
-    applications, relational &amp; document databases.
+    <br />I have work with microservices, cloud services, monolithic
+    applications, relational &amp; NoSQL databases.
   </p>,
   <p className="animated fadeIn">
-    I am a Technical Lead.
-    <br />I have exposure to project management, estimation &amp; mentoring. I
-    work with tools like Jira, Confluence &amp; Bitbucket.
+    I am a Tech Lead.
+    <br />I manage teams, mentor engineers &amp; plan the execution of complex
+    software solutions.
   </p>
 ];
 
@@ -71,15 +71,19 @@ const IndexPage = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon icon={faLinkedin} />
+              <FontAwesomeIcon className="social" icon={faLinkedin} />
             </a>
             <a
               href="https://github.com/routbisu"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon icon={faGithub} />
+              <FontAwesomeIcon className="social" icon={faGithub} />
             </a>
+
+            <Link to="/about">
+              <FontAwesomeIcon className="social" icon={faFilePdf} />
+            </Link>
           </div>
         </div>
       </div>

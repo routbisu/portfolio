@@ -8,3 +8,28 @@ $black: #272c36;
 $grey-overlay-color: #262933;
 
 $max-page-width: 1440px;
+
+@mixin button-hover-animation-1($bg-color) {
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: '';
+    background: $bg-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transform: translateX(-101%);
+    transition: 0.2s ease-in-out;
+  }
+
+  &:hover {
+    &:before {
+      transform: translateX(0%);
+      transition: 0.2s ease-in-out;
+    }
+  }
+}

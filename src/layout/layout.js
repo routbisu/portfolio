@@ -22,7 +22,7 @@ const Layout = ({ children, heading, home }) => {
           content="Hi, I am Biswa. I am a Web Developer. I am a self-motivated, and self-taught programmer, driven to build amazing software that I am proud of."
         />
       </Helmet>
-      <div className={`header ${home && 'home'}`}>
+      <div className={`header ${home ? 'home' : ''}`}>
         <div className="logo-container">
           <Link to="/">
             <img src={Logo} alt="Logo" />
@@ -43,7 +43,7 @@ const Layout = ({ children, heading, home }) => {
         </div>
         <MobileMenu />
       </div>
-      {children}
+      <div className="main-content">{children}</div>
     </div>
   );
 };

@@ -34,9 +34,9 @@
       bottom: 40px;
       left: 40px;
 
-      svg {
+      svg.social {
         color: $secondary-color;
-        font-size: 2.6rem;
+        font-size: 2.3rem;
         margin-right: 18px;
 
         &:hover {
@@ -88,10 +88,7 @@
           font-size: 0.8rem;
         }
 
-        &:hover {
-          background: darken($secondary-color, 59%);
-          transition: 0.3s;
-        }
+        @include button-hover-animation-1(darken($secondary-color, 59%));
 
         @media screen and (max-width: 500px) {
           width: 100%;
