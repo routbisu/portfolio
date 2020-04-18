@@ -1,0 +1,43 @@
+@import '../scss/';
+
+// Styles for articles text - for projects & blog
+article.article {
+  h1 {
+    color: $primary-color;
+    font-size: 1.65rem;
+    font-weight: 500;
+  }
+
+  h2 {
+    color: $primary-color;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 17px;
+  }
+
+  p {
+    color: $grey-overlay-color;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    margin-top: 15px;
+    color: $grey-overlay-color;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-left: 15px;
+    list-style: none;
+
+    li::before {
+      content: '\2713';
+      color: $primary-color;
+      font-weight: bold;
+      font-size: 0.9rem;
+      display: inline-block;
+      width: 1.5em;
+      margin-left: -1em;
+    }
+  }
+}
