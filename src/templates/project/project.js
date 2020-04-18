@@ -157,7 +157,7 @@ const Project = ({
             <h2>Tech Stack</h2>
             <div className="skills-container">
               {skillSet.map(skill => (
-                <div className="skill-wrapper">
+                <div className="skill-wrapper" key={skill.name}>
                   <img
                     src={`../../../tech-icons/${skill.logo}`}
                     alt={skill.name}
@@ -185,13 +185,17 @@ const Project = ({
         {videoLink && (
           <div className="video-demos">
             {videoLink.map((video, i) => (
-              <div className="video-frame">
+              <div
+                className="video-frame"
+                style={{ paddingBottom: video.videoRatio || '56.25%' }}
+                key={i}
+              >
                 <iframe
-                  key={i}
                   src={video.link}
-                  frameborder="0"
+                  frameBorder={0}
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen="true"
+                  allowFullScreen={true}
+                  autoplay="true"
                 />
               </div>
             ))}

@@ -33,8 +33,9 @@ const projects = {
       logo: 'wings-logo.png',
       videoLink: [
         {
-          link: 'https://www.youtube.com/embed/QGOiqoEyhnY?start=54',
-          label: 'Wings Suite walkthrough'
+          link: 'https://www.youtube.com/embed/QGOiqoEyhnY?start=54&autoplay=1',
+          label: 'Wings Suite walkthrough',
+          videoRatio: '71.7%'
         }
       ],
       skillSet: Object.values(skills),

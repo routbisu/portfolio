@@ -44,7 +44,7 @@
     "clean": "gatsby clean",
     "deploy": "npm run build && mv public/index.html public/200.html && surge public --domain biswa.surge.sh",
     "deploy:prod": "npm run build && firebase deploy",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "quick:deploy": "git add -A && git commit -m \"Quick fixes\" && git push && npm run deploy:prod"
   },
   "repository": {
     "type": "git",
