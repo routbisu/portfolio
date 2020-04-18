@@ -8,7 +8,7 @@ import { Link } from 'gatsby';
 import { menuItems } from '../config/appConfig';
 import MobileMenu from './MobileMenu/MobileMenu';
 
-const Layout = ({ children, heading, home }) => {
+const Layout = ({ children, heading, home, showHomeButton }) => {
   return (
     <div className="layout-container">
       <Helmet>
@@ -30,6 +30,7 @@ const Layout = ({ children, heading, home }) => {
         </div>
         <div className="main-menu tablet-and-desktop-only">
           {!home && <Link to="/">Home</Link>}
+          {showHomeButton && <Link to="/">Home</Link>}
           {menuItems.map(item => (
             <Link
               to={item.link}

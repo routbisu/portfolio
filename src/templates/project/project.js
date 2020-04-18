@@ -133,8 +133,11 @@ const Project = ({
       showcase,
       skillSet,
       description,
-      responsibilities
+      responsibilities,
+      videoLink
     } = projectDetails;
+
+    console.log('skillSet', skillSet);
 
     return (
       <article className="article">
@@ -154,18 +157,47 @@ const Project = ({
         {skillSet && (
           <>
             <h2>Tech Stack</h2>
+            <div className="skills-container">
+              {skillSet.map(skill => (
+                <div className="skill-wrapper">
+                  <img
+                    src={`../../../tech-icons/${skill.logo}`}
+                    alt={skill.name}
+                    style={{ padding: skill.padding || 0 }}
+                  />
+                  {skill.showName && <p>{skill.name}</p>}
+                </div>
+              ))}
+            </div>
           </>
         )}
 
+        {showcase || (videoLink && <h2>Showcase</h2>)}
+
         {showcase && (
           <>
-            <h2>Resources</h2>
             <Showcase
               data={showcase}
               projectType={projectType}
               projectDetails={projectDetails}
             />
           </>
+        )}
+
+        {videoLink && (
+          <div className="video-demos">
+            {videoLink.map((video, i) => (
+              <div className="video-frame">
+                <iframe
+                  key={i}
+                  src={video.link}
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen="true"
+                />
+              </div>
+            ))}
+          </div>
         )}
       </article>
     );

@@ -82,10 +82,14 @@
         font-weight: 300;
         font-size: 1.2rem;
         cursor: pointer;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        justify-content: center;
 
         svg {
-          margin-left: 10px;
-          font-size: 0.8rem;
+          margin-left: 12px;
+          font-size: 1rem;
         }
 
         @include button-hover-animation-1(darken($secondary-color, 59%));

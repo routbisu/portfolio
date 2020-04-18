@@ -8,6 +8,7 @@ import './index.scss';
 import { Link } from 'gatsby';
 import { getLinkUrl } from '../services/commonService';
 import Slider from 'react-slick';
+import SocialLinks from '../components/SocialLinks';
 
 const sliderConfig = {
   arrows: false,
@@ -65,26 +66,7 @@ const IndexPage = () => {
             </Link>
           </div>
 
-          <div className="social-links">
-            <a
-              href="https://www.linkedin.com/in/biswaranjanrout/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon className="social" icon={faLinkedin} />
-            </a>
-            <a
-              href="https://github.com/routbisu"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon className="social" icon={faGithub} />
-            </a>
-
-            <Link to="/about">
-              <FontAwesomeIcon className="social" icon={faFilePdf} />
-            </Link>
-          </div>
+          <SocialLinks />
         </div>
       </div>
     </Layout>

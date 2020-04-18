@@ -4,11 +4,18 @@ const projectTypes = [
 ];
 
 const skills = {
-  react: { name: 'React', slug: 'react' },
-  redux: { name: 'Redux', slug: 'redux' },
-  html: { name: 'HTML5', slug: 'html5' },
-  sass: { name: 'SASS', slug: 'sass' },
-  mongo_db: { name: 'Mongo DB', slug: 'mongo-db' }
+  // express: { name: 'Express', logo: 'express.svg', padding: 10 },
+  html5: { name: 'HTML5', logo: 'html5.svg' },
+  css3: { name: 'CSS3', logo: 'css3.svg' },
+  js: { name: 'JavaScript', logo: 'js.svg', padding: 4 },
+  mongodb: { name: 'Mongo DB', logo: 'mongodb.svg', padding: 4 },
+  nodejs: { name: 'Node.js', logo: 'nodejs.svg', padding: 4 },
+  react: { name: 'React', logo: 'react.svg', showName: true, padding: 3 },
+  react: { name: 'Gatsby', logo: 'gatsby.svg', showName: true, padding: 0 },
+  vuejs: { name: 'Vue.js', logo: 'vue.svg', showName: true, padding: 3 },
+  redux: { name: 'Redux', logo: 'redux.svg', showName: true, padding: 9 },
+  sass: { name: 'SASS', logo: 'sass.svg', padding: 5 },
+  typescript: { name: 'Typescript', logo: 'typescript.svg' }
 };
 
 const linkTypes = {
@@ -24,8 +31,13 @@ const projects = {
       duration: 'Sept 2018 - June 2019',
       org: 'Sandisk (Western Digital)',
       logo: 'wings-logo.png',
-      showcase: ['Device manager home', '', 'Test output', ''],
-      skillSet: [skills.react, skills.html, skills.sass],
+      videoLink: [
+        {
+          link: 'https://www.youtube.com/embed/QGOiqoEyhnY?start=54',
+          label: 'Wings Suite walkthrough'
+        }
+      ],
+      skillSet: Object.values(skills),
       description: [
         `Wings suite is an internal-use only tool for automation of processes related to firmware management and testing on storage devices. It is a one-stop solution to setup and recreate validation environment, execute device management operations, and to perform automated failure analysis including features like perform firmware management operations, executes tests, diagnostic logs (collect, decode, visualize), create and execute test cases. Its target users include firmware developers, firmware validation engineers and failure analysis engineers.`
       ],
