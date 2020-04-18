@@ -10,6 +10,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import Dropdown from '../../components/common/Dropdown/Dropdown';
 import Showcase from '../../components/common/Showcase/Showcase';
+import { navigate } from 'gatsby';
 
 const getSelectedProjectTitle = (projects, selectedProjSlug) => {
   const proj = projects.find(a => a.slug === selectedProjSlug);
@@ -20,6 +21,14 @@ const Project = ({
   pageContext: { projectDetails, projectTypes, projectType, projects }
 }) => {
   const [selectedMenu, setSelectedMenu] = useState(projectType.type);
+
+  const handleChange = page => {
+    navigate(
+      `/projects/${
+        projectTypes.find(a => a.type === selectedMenu).slug
+      }/${page}`
+    );
+  };
 
   const ProjectsDropdown = () => (
     <Dropdown
@@ -32,6 +41,7 @@ const Project = ({
         projectDetails.slug
       )}
       defaultText="Select a project"
+      onChange={handleChange}
     />
   );
 
@@ -146,7 +156,7 @@ const Project = ({
         {showcase && (
           <>
             <h2>Resources</h2>
-            {/* <Showcase data={showcase} /> */}
+            <Showcase data={showcase} />
           </>
         )}
 
