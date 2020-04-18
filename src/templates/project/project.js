@@ -138,32 +138,12 @@ const Project = ({
 
     return (
       <article className="article">
-        {description &&
-          description.map((desc, i) => (
-            <p key={i}>
-              Wings suite is an internal-use only tool for automation of
-              processes related to firmware management and testing on storage
-              devices. It is a one-stop solution to setup and recreate
-              validation environment, execute device management operations, and
-              to perform automated failure analysis including features like
-              perform firmware management operations, executes tests, diagnostic
-              logs (collect, decode, visualize), create and execute test cases.
-              Its target users include firmware developers, firmware validation
-              engineers and failure analysis engineers.
-            </p>
-          ))}
-
-        {showcase && (
-          <>
-            <h2>Resources</h2>
-            <Showcase data={showcase} />
-          </>
-        )}
+        {description && description.map((desc, i) => <p key={i}>{desc}</p>)}
 
         {responsibilities && (
           <>
             <h2>My Contribution</h2>
-            <ul>
+            <ul className="simple-list">
               {responsibilities.map((resp, i) => (
                 <li key={i}>{resp}</li>
               ))}
@@ -174,6 +154,17 @@ const Project = ({
         {skillSet && (
           <>
             <h2>Tech Stack</h2>
+          </>
+        )}
+
+        {showcase && (
+          <>
+            <h2>Resources</h2>
+            <Showcase
+              data={showcase}
+              projectType={projectType}
+              projectDetails={projectDetails}
+            />
           </>
         )}
       </article>
