@@ -4,18 +4,25 @@ const projectTypes = [
 ];
 
 const skills = {
-  // express: { name: 'Express', logo: 'express.svg', padding: 10 },
-  html5: { name: 'HTML5', logo: 'html5.svg' },
-  css3: { name: 'CSS3', logo: 'css3.svg' },
+  express: { name: 'Express', logo: 'express.svg', padding: 10 },
+  html5: { name: 'HTML', logo: 'html5.svg', padding: 5 },
+  css3: { name: 'CSS', logo: 'css3.svg', padding: 5 },
   js: { name: 'JavaScript', logo: 'js.svg', padding: 4 },
   mongodb: { name: 'Mongo DB', logo: 'mongodb.svg', padding: 4 },
-  nodejs: { name: 'Node.js', logo: 'nodejs.svg', padding: 4 },
+  nodejs: { name: 'Node', logo: 'nodejs.svg', padding: 4 },
   react: { name: 'React', logo: 'react.svg', showName: true, padding: 3 },
-  react: { name: 'Gatsby', logo: 'gatsby.svg', showName: true, padding: 0 },
+  gatsby: { name: 'Gatsby', logo: 'gatsby.svg', showName: true, padding: 0 },
   vuejs: { name: 'Vue.js', logo: 'vue.svg', showName: true, padding: 3 },
   redux: { name: 'Redux', logo: 'redux.svg', showName: true, padding: 9 },
   sass: { name: 'SASS', logo: 'sass.svg', padding: 5 },
-  typescript: { name: 'Typescript', logo: 'typescript.svg' }
+  typescript: {
+    name: 'Typescript',
+    logo: 'typescript.svg',
+    padding: 6,
+    showName: true
+  },
+  jest: { name: 'Jest' },
+  enzyme: { name: 'Enzyme' }
 };
 
 const linkTypes = {
@@ -38,7 +45,16 @@ const projects = {
           videoRatio: '71.7%'
         }
       ],
-      skillSet: Object.values(skills),
+      skillSet: [
+        skills.react,
+        skills.redux,
+        skills.typescript,
+        skills.html5,
+        skills.css3,
+        skills.nodejs,
+        skills.jest,
+        skills.enzyme
+      ],
       description: [
         `Wings suite is an internal-use only tool for automation of processes related to firmware management and testing on storage devices. It is a one-stop solution to setup and recreate validation environment, execute device management operations, and to perform automated failure analysis including features like perform firmware management operations, executes tests, diagnostic logs (collect, decode, visualize), create and execute test cases. Its target users include firmware developers, firmware validation engineers and failure analysis engineers.`
       ],

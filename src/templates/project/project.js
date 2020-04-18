@@ -156,16 +156,18 @@ const Project = ({
           <>
             <h2>Tech Stack</h2>
             <div className="skills-container">
-              {skillSet.map(skill => (
-                <div className="skill-wrapper" key={skill.name}>
-                  <img
-                    src={`../../../tech-icons/${skill.logo}`}
-                    alt={skill.name}
-                    style={{ padding: skill.padding || 0 }}
-                  />
-                  {skill.showName && <p>{skill.name}</p>}
-                </div>
-              ))}
+              {skillSet.map(skill =>
+                skill.logo ? (
+                  <div className="skill-wrapper" key={skill.name}>
+                    <img
+                      src={`../../../tech-icons/${skill.logo}`}
+                      alt={skill.name}
+                      style={{ padding: skill.padding || 0 }}
+                    />
+                    {<p>{skill.name}</p>}
+                  </div>
+                ) : null
+              )}
             </div>
           </>
         )}
