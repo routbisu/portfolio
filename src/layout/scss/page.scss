@@ -1,0 +1,48 @@
+@import '../scss/';
+
+.page-container {
+  width: 100%;
+
+  @media screen and (min-width: 501px) {
+    display: flex;
+  }
+
+  .page-menu {
+    flex-basis: 240px;
+    button.menu-button {
+      width: 100%;
+      text-align: left;
+      padding: 12px 16px;
+      background: $light-grey-bg;
+      margin-bottom: 1px;
+      cursor: pointer;
+      font-weight: 500;
+
+      svg {
+        float: right;
+        font-size: 1.3rem;
+        color: transparent;
+      }
+
+      &.active {
+        background: $primary-color;
+        color: $white;
+        svg {
+          color: inherit;
+        }
+      }
+
+      &:hover:not(.active) {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .page-content {
+    flex: 1;
+    padding: 20px 3px;
+    @media screen and (min-width: 501px) {
+      padding: 10px 25px;
+    }
+  }
+}

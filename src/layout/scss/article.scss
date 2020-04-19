@@ -6,13 +6,14 @@ article.article {
     color: $primary-color;
     font-size: 1.65rem;
     font-weight: 500;
+    margin-bottom: 17px;
   }
 
   h2 {
     color: $primary-color;
     font-size: 1.1rem;
     font-weight: 600;
-    margin-top: 17px;
+    margin-bottom: 17px;
   }
 
   p {
@@ -23,7 +24,7 @@ article.article {
   }
 
   ul.simple-list {
-    margin-top: 15px;
+    margin-bottom: 15px;
     color: $grey-overlay-color;
     font-size: 1rem;
     line-height: 1.8;
@@ -42,7 +43,7 @@ article.article {
   }
 
   .video-demos {
-    padding-top: 20px;
+    padding-bottom: 20px;
     .video-frame {
       overflow: hidden;
       position: relative;
@@ -54,17 +55,35 @@ article.article {
         width: 100%;
         position: absolute;
       }
+
+      .video-overlay-special {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: transparent;
+        z-index: 1;
+      }
+    }
+
+    p.label {
+      padding-top: 8px;
+      color: $grey-overlay-color;
+      opacity: 0.9;
     }
   }
 
   .skills-container {
-    padding: 10px 0px;
+    padding-bottom: 15px;
     display: flex;
     flex-wrap: wrap;
 
     .skill-wrapper {
-      margin-right: 13px;
+      margin-right: 15px;
       text-align: center;
+      display: flex;
+      flex-direction: column;
       img {
         max-height: 50px;
       }
@@ -72,7 +91,7 @@ article.article {
         font-weight: 600;
         text-align: center;
         margin-top: -4px;
-        font-size: 0.95rem;
+        font-size: 0.9rem;
       }
     }
   }

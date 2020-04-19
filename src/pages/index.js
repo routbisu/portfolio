@@ -3,7 +3,6 @@ import Layout from '../layout/layout';
 import BgVideo from '../images/bg-video.webm';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight, faFilePdf } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import './index.scss';
 import { Link } from 'gatsby';
 import { getLinkUrl } from '../services/commonService';

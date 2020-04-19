@@ -1,6 +1,7 @@
-const { projects, projectTypes, skills } = require('./static-data');
+const { projects, projectTypes, allSkills } = require('./static-data');
 
 exports.createPages = async ({ actions: { createPage } }) => {
+  // Generate project pages
   projectTypes.forEach(projectType => {
     projects[projectType.type].forEach(projectDetails => {
       createPage({
@@ -13,6 +14,16 @@ exports.createPages = async ({ actions: { createPage } }) => {
           projects
         }
       });
+    });
+  });
+
+  // Generate skills pages
+  allSkills.forEach(skillType => {
+    const { slug, label } = skillType;
+    createPage({
+      path: `/skills/${slug}`,
+      component: require.resolve(`./src/templates/skills/skills.js`),
+      context: { allSkills, slug, label }
     });
   });
 };

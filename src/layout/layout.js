@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useLayoutEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import favIcon from '../images/favicon.png';
 import Logo from '../images/logo.png';
@@ -9,6 +9,25 @@ import { menuItems } from '../config/appConfig';
 import MobileMenu from './MobileMenu/MobileMenu';
 
 const Layout = ({ children, heading, home, showHomeButton }) => {
+  const handleScroll = () => {
+    if (window) {
+      if (window.pageYOffset > 20) {
+        showSticky(true);
+      } else {
+        showSticky(false);
+      }
+    }
+  };
+
+  useLayoutEffect(() => {
+    if (window) window.addEventListener('scroll', handleScroll);
+    return () => {
+      if (window) window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const [sticky, showSticky] = useState(false);
+
   return (
     <div className="layout-container">
       <Helmet>
@@ -22,7 +41,9 @@ const Layout = ({ children, heading, home, showHomeButton }) => {
           content="Hi, I am Biswa. I am a Web Developer. I am a self-motivated, and self-taught programmer, driven to build amazing software that I am proud of."
         />
       </Helmet>
-      <div className={`header ${home ? 'home' : ''}`}>
+      <div
+        className={`header ${home ? 'home' : ''} ${sticky && 'sticky-header'}`}
+      >
         <div className="logo-container">
           <Link to="/">
             <img src={Logo} alt="Logo" />

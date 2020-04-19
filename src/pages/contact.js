@@ -10,7 +10,7 @@ import SocialLinks from '../components/SocialLinks';
 
 const Contact = () => {
   return (
-    <Layout home={true} showHomeButton={true}>
+    <Layout home={true} showHomeButton={true} heading="Contact">
       <div className="home-container">
         <div className="video-container">
           <video autoPlay muted loop className="tablet-and-desktop-only">

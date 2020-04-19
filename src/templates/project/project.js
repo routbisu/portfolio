@@ -11,6 +11,7 @@ import {
 import Dropdown from '../../components/common/Dropdown/Dropdown';
 import Showcase from '../../components/common/Showcase/Showcase';
 import { navigate } from 'gatsby';
+import ExternalLink from '../../components/common/ExternalLink/ExternalLink';
 
 const getSelectedProjectTitle = (projects, selectedProjSlug) => {
   const proj = projects.find(a => a.slug === selectedProjSlug);
@@ -156,18 +157,16 @@ const Project = ({
           <>
             <h2>Tech Stack</h2>
             <div className="skills-container">
-              {skillSet.map(skill =>
-                skill.logo ? (
-                  <div className="skill-wrapper" key={skill.name}>
-                    <img
-                      src={`../../../tech-icons/${skill.logo}`}
-                      alt={skill.name}
-                      style={{ padding: skill.padding || 0 }}
-                    />
-                    {<p>{skill.name}</p>}
-                  </div>
-                ) : null
-              )}
+              {skillSet.map((skill, i) => (
+                <div className="skill-wrapper" key={i}>
+                  <img
+                    src={`../../../tech-icons/${skill.logo}`}
+                    alt={skill.name}
+                    style={{ padding: skill.padding || 0 }}
+                  />
+                  {<p>{skill.name}</p>}
+                </div>
+              ))}
             </div>
           </>
         )}
@@ -187,19 +186,27 @@ const Project = ({
         {videoLink && (
           <div className="video-demos">
             {videoLink.map((video, i) => (
-              <div
-                className="video-frame"
-                style={{ paddingBottom: video.videoRatio || '56.25%' }}
-                key={i}
-              >
-                <iframe
-                  src={video.link}
-                  frameBorder={0}
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen={true}
-                  autoplay="true"
-                />
-              </div>
+              <>
+                <div
+                  className="video-frame"
+                  style={{ paddingBottom: video.videoRatio || '56.25%' }}
+                  key={i}
+                >
+                  <iframe
+                    src={video.link}
+                    frameBorder={0}
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen={true}
+                  />
+                  {video.hideInfo && <div className="video-overlay-special" />}
+                </div>
+                {video.label && <p className="label">{video.label}</p>}
+                {video.external && (
+                  <div className="external">
+                    <ExternalLink {...video.external} />
+                  </div>
+                )}
+              </>
             ))}
           </div>
         )}
