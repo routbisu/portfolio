@@ -5,12 +5,13 @@ const projectTypes = [
 
 const skills = {
   express: { name: 'Express', logo: 'express.svg', padding: 10 },
-  html5: { name: 'HTML', logo: 'html5.svg', padding: 5 },
-  css3: { name: 'CSS', logo: 'css3.svg', padding: 5 },
+  html5: { name: 'HTML5', logo: 'html5.svg', padding: 5 },
+  css3: { name: 'CSS3', logo: 'css3.svg', padding: 5 },
   js: { name: 'JavaScript', logo: 'js.svg', padding: 4 },
   mongodb: { name: 'Mongo DB', logo: 'mongodb.svg', padding: 4 },
   nodejs: { name: 'Node', logo: 'nodejs.svg', padding: 4 },
   react: { name: 'React', logo: 'react.svg', padding: 3 },
+  electron: { name: 'Electron', logo: 'electron.png', padding: 6 },
   gatsby: { name: 'Gatsby', logo: 'gatsby.svg', padding: 0 },
   vuejs: { name: 'Vue.js', logo: 'vue.svg', padding: 3 },
   redux: { name: 'Redux', logo: 'redux.svg', padding: 9 },
@@ -48,7 +49,8 @@ const projects = {
         skills.typescript,
         skills.html5,
         skills.css3,
-        skills.nodejs
+        skills.nodejs,
+        skills.electron
       ],
       description: [
         `Wings Suite is an internal product for automation of processes related to firmware management & testing for storage devices. It enables firmware engineers to test storage devices from a web based interface in contrast to the existing system where they use command line tools to run these tests. Wings also allows them to save test suites, decode test results, manage properties of storage devices and perform failure analysis all from a user-friendly web portal.`
