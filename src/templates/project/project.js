@@ -186,11 +186,10 @@ const Project = ({
         {videoLink && (
           <div className="video-demos">
             {videoLink.map((video, i) => (
-              <>
+              <React.Fragment key={i}>
                 <div
                   className="video-frame"
                   style={{ paddingBottom: video.videoRatio || '56.25%' }}
-                  key={i}
                 >
                   <iframe
                     src={video.link}
@@ -206,7 +205,7 @@ const Project = ({
                     <ExternalLink {...video.external} />
                   </div>
                 )}
-              </>
+              </React.Fragment>
             ))}
           </div>
         )}
