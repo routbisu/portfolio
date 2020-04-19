@@ -4,24 +4,44 @@ const projectTypes = [
 ];
 
 const skills = {
-  express: { name: 'Express', logo: 'express.svg', padding: 10 },
   html5: { name: 'HTML5', logo: 'html5.svg', padding: 5 },
   css3: { name: 'CSS3', logo: 'css3.svg', padding: 5 },
-  js: { name: 'JavaScript', logo: 'js.svg', padding: 4 },
-  mongodb: { name: 'Mongo DB', logo: 'mongodb.svg', padding: 4 },
-  nodejs: { name: 'Node', logo: 'nodejs.svg', padding: 4 },
-  react: { name: 'React', logo: 'react.svg', padding: 3 },
-  material_ui: { name: 'Material UI', logo: 'material-ui.svg', padding: 8 },
-  electron: { name: 'Electron', logo: 'electron.png', padding: 6 },
-  gatsby: { name: 'Gatsby', logo: 'gatsby.svg', padding: 4 },
-  vuejs: { name: 'Vue.js', logo: 'vue.svg', padding: 3 },
-  redux: { name: 'Redux', logo: 'redux.svg', padding: 9 },
+  bootstrap: { name: 'Bootstrap', logo: 'bootstrap.svg', padding: 7 },
   sass: { name: 'SASS', logo: 'sass.svg', padding: 5 },
+  js: { name: 'JavaScript', logo: 'js.svg', padding: 7 },
+  es6: { name: 'ES6', logo: 'es6.svg', padding: 7 },
   typescript: {
     name: 'Typescript',
     logo: 'typescript.svg',
-    padding: 8
-  }
+    padding: 7
+  },
+
+  react: { name: 'React', logo: 'react.svg', padding: 5 },
+  redux: { name: 'Redux', logo: 'redux.svg', padding: 9 },
+  gatsby: { name: 'Gatsby', logo: 'gatsby.svg', padding: 5 },
+  nextjs: { name: 'NextJS', logo: 'nextjs.svg', padding: 5 },
+  vuejs: { name: 'Vue.js', logo: 'vue.svg', padding: 0 },
+  svelte: { name: 'Svelte', logo: 'svelte.svg', padding: 3 },
+  material_ui: { name: 'Material UI', logo: 'material-ui.svg', padding: 9 },
+  electron: { name: 'Electron', logo: 'electron.png', padding: 7 },
+
+  nodejs: { name: 'Node', logo: 'nodejs.svg', padding: 4 },
+  express: { name: 'Express', logo: 'express.svg', padding: 10 },
+  golang: { name: 'Go', logo: 'golang.png', padding: 4 },
+  mux: { name: 'Mux', logo: 'mux.png', padding: 4 },
+  python: { name: 'Python', logo: 'python.svg', padding: 4 },
+  flask: { name: 'Flask', logo: 'flask.svg', padding: 4 },
+  csharp: { name: 'C#', logo: 'csharp.svg', padding: 4 },
+  aspnet: { name: 'ASP.Net', logo: 'aspnet.svg', padding: 4 },
+  php: { name: 'PHP', logo: 'php.svg', padding: 6 },
+
+  mongodb: { name: 'Mongo DB', logo: 'mongodb.png', padding: 5 },
+  postgres: { name: 'PostgreSQL', logo: 'postgres.svg', padding: 5 },
+  mysql: { name: 'MySQL', logo: 'mysql.svg', padding: 5 },
+  dynamodb: { name: 'DynamoDB', logo: 'dynamodb.svg', padding: 5 },
+  firebase: { name: 'Firebase', logo: 'firebase.svg', padding: 5 },
+  redis: { name: 'Redis', logo: 'redis.svg', padding: 5 },
+  sqlite: { name: 'SQLite', logo: 'sqlite.svg', padding: 5 }
 };
 
 const linkTypes = {
@@ -128,19 +148,50 @@ const allSkills = [
   {
     label: 'Frontend',
     slug: 'frontend',
-    skills: [skills.react, skills.redux, skills.html5, skills.css3]
+    skills: [
+      skills.html5,
+      skills.css3,
+      skills.sass,
+      skills.bootstrap,
+      skills.js,
+      skills.es6,
+      skills.typescript,
+      skills.react,
+      skills.redux,
+      skills.vuejs,
+      skills.svelte,
+      skills.nextjs,
+      skills.gatsby,
+      skills.material_ui,
+      skills.electron
+    ]
   },
   {
     label: 'Backend',
     slug: 'backend',
-    skills: [skills.gatsby, skills.nodejs]
+    skills: [
+      skills.nodejs,
+      skills.golang,
+      skills.mux,
+      skills.python,
+      skills.flask,
+      skills.csharp,
+      skills.aspnet,
+      skills.php,
+      skills.mongodb,
+      skills.mysql,
+      skills.postgres,
+      skills.dynamodb,
+      skills.firebase,
+      skills.redis
+    ]
   },
+  { label: 'DevOps', slug: 'devops', skills: [skills.gatsby, skills.nodejs] },
   {
     label: 'Mobile Dev',
     slug: 'mobile',
     skills: [skills.gatsby, skills.nodejs]
-  },
-  { label: 'DevOps', slug: 'devops', skills: [skills.gatsby, skills.nodejs] }
+  }
 ];
 
 module.exports = {
