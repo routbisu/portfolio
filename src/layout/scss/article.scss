@@ -84,8 +84,9 @@ article.article {
       text-align: center;
       display: flex;
       flex-direction: column;
+      align-items: center;
       img {
-        max-height: 50px;
+        height: 50px;
       }
       p {
         font-weight: 600;

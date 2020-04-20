@@ -18,7 +18,7 @@ const SkillsSection = ({ skills, label }) => {
               alt={skill.name}
               style={{ padding: skill.padding || 0 }}
             />
-            {<p>{skill.name}</p>}
+            <p>{skill.name}</p>
           </div>
         ))}
       </div>

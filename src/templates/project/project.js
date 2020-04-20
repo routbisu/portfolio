@@ -138,6 +138,8 @@ const Project = ({
       videoLink
     } = projectDetails;
 
+    console.log('skillSet', skillSet);
+
     return (
       <article className="article">
         {description && description.map((desc, i) => <p key={i}>{desc}</p>)}
@@ -164,7 +166,7 @@ const Project = ({
                     alt={skill.name}
                     style={{ padding: skill.padding || 0 }}
                   />
-                  {<p>{skill.name}</p>}
+                  <p>{skill.name}</p>
                 </div>
               ))}
             </div>
@@ -197,7 +199,7 @@ const Project = ({
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen={true}
                   />
-                  {video.hideInfo && <div className="video-overlay-special" />}
+                  {/* {video.hideInfo && <div className="video-overlay-special" />} */}
                 </div>
                 {video.label && <p className="label">{video.label}</p>}
                 {video.external && (

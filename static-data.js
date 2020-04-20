@@ -7,7 +7,7 @@ const skills = {
   html5: { name: 'HTML5', logo: 'html5.svg', padding: 5 },
   css3: { name: 'CSS3', logo: 'css3.svg', padding: 5 },
   bootstrap: { name: 'Bootstrap', logo: 'bootstrap.svg', padding: 7 },
-  sass: { name: 'SASS', logo: 'sass.svg', padding: 5 },
+  sass: { name: 'SASS', logo: 'sass.svg', padding: 7 },
   js: { name: 'JavaScript', logo: 'js.svg', padding: 7 },
   es6: { name: 'ES6', logo: 'es6.svg', padding: 7 },
   typescript: {
@@ -16,32 +16,42 @@ const skills = {
     padding: 7
   },
 
-  react: { name: 'React', logo: 'react.svg', padding: 5 },
-  redux: { name: 'Redux', logo: 'redux.svg', padding: 9 },
-  gatsby: { name: 'Gatsby', logo: 'gatsby.svg', padding: 5 },
-  nextjs: { name: 'NextJS', logo: 'nextjs.svg', padding: 5 },
-  vuejs: { name: 'Vue.js', logo: 'vue.svg', padding: 0 },
-  svelte: { name: 'Svelte', logo: 'svelte.svg', padding: 3 },
+  react: { name: 'React', logo: 'react.svg', padding: 4 },
+  redux: { name: 'Redux', logo: 'redux.svg', padding: 7 },
+  gatsby: { name: 'Gatsby', logo: 'gatsby.svg', padding: 7 },
+  nextjs: { name: 'NextJS', logo: 'nextjs.svg', padding: 6 },
+  vuejs: { name: 'Vue.js', logo: 'vue.svg', padding: 8 },
+  svelte: { name: 'Svelte', logo: 'svelte.svg', padding: 6 },
   material_ui: { name: 'Material UI', logo: 'material-ui.svg', padding: 9 },
   electron: { name: 'Electron', logo: 'electron.png', padding: 7 },
 
-  nodejs: { name: 'Node', logo: 'nodejs.svg', padding: 4 },
+  nodejs: { name: 'Node', logo: 'nodejs.svg', padding: 6 },
   express: { name: 'Express', logo: 'express.svg', padding: 10 },
-  golang: { name: 'Go', logo: 'golang.png', padding: 4 },
+  golang: { name: 'Go', logo: 'golang.png', padding: 7 },
   mux: { name: 'Mux', logo: 'mux.png', padding: 4 },
-  python: { name: 'Python', logo: 'python.svg', padding: 4 },
+  python: { name: 'Python', logo: 'python.svg', padding: 7 },
   flask: { name: 'Flask', logo: 'flask.svg', padding: 4 },
-  csharp: { name: 'C#', logo: 'csharp.svg', padding: 4 },
+  csharp: { name: 'C#', logo: 'csharp.svg', padding: 7 },
   aspnet: { name: 'ASP.Net', logo: 'aspnet.svg', padding: 4 },
-  php: { name: 'PHP', logo: 'php.svg', padding: 6 },
+  php: { name: 'PHP', logo: 'php.svg', padding: 10 },
 
   mongodb: { name: 'Mongo DB', logo: 'mongodb.png', padding: 5 },
-  postgres: { name: 'PostgreSQL', logo: 'postgres.svg', padding: 5 },
+  postgres: { name: 'PostgreSQL', logo: 'postgres.svg', padding: 6 },
   mysql: { name: 'MySQL', logo: 'mysql.svg', padding: 5 },
-  dynamodb: { name: 'DynamoDB', logo: 'dynamodb.svg', padding: 5 },
+  dynamodb: { name: 'DynamoDB', logo: 'dynamodb.svg', padding: 7 },
   firebase: { name: 'Firebase', logo: 'firebase.svg', padding: 5 },
-  redis: { name: 'Redis', logo: 'redis.svg', padding: 5 },
-  sqlite: { name: 'SQLite', logo: 'sqlite.svg', padding: 5 }
+  redis: { name: 'Redis', logo: 'redis.svg', padding: 8 },
+  sqlite: { name: 'SQLite', logo: 'sqlite.svg', padding: 7 },
+
+  nginx: { name: 'Nginx', logo: 'nginx.png', padding: 6, hideName: true },
+  serverless: { name: 'Serverless', logo: 'serverless.svg', padding: 6 },
+  docker: { name: 'Docker', logo: 'docker.png', padding: 5, hideName: true },
+  kubernetes: { name: 'Kubernetes', logo: 'kubernetes.svg', padding: 7 },
+  aws: { name: 'AWS', logo: 'aws.svg', padding: 10, hideName: true },
+  gcp: { name: 'GCP', logo: 'gcloud.svg', padding: 9 },
+  netlify: { name: 'Netlify', logo: 'netlify.svg', padding: 7 },
+  heroku: { name: 'Heroku', logo: 'heroku.svg', padding: 6, hideName: true },
+  ghpages: { name: 'Ghpages', logo: 'ghpages.svg', padding: 7 }
 };
 
 const linkTypes = {
@@ -172,11 +182,8 @@ const allSkills = [
     skills: [
       skills.nodejs,
       skills.golang,
-      skills.mux,
       skills.python,
-      skills.flask,
       skills.csharp,
-      skills.aspnet,
       skills.php,
       skills.mongodb,
       skills.mysql,
@@ -186,12 +193,26 @@ const allSkills = [
       skills.redis
     ]
   },
-  { label: 'DevOps', slug: 'devops', skills: [skills.gatsby, skills.nodejs] },
   {
-    label: 'Mobile Dev',
-    slug: 'mobile',
-    skills: [skills.gatsby, skills.nodejs]
+    label: 'DevOps',
+    slug: 'devops',
+    skills: [
+      skills.nginx,
+      skills.serverless,
+      skills.docker,
+      skills.kubernetes,
+      skills.aws,
+      skills.gcp,
+      skills.netlify,
+      skills.heroku,
+      skills.ghpages
+    ]
   }
+  // {
+  //   label: 'Mobile Dev',
+  //   slug: 'mobile',
+  //   skills: [skills.gatsby, skills.nodejs]
+  // }
 ];
 
 module.exports = {
