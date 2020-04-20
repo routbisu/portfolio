@@ -6,6 +6,7 @@ $highly-light-grey-bg: #fafafa;
 $light-grey-bg: #f1f1f1;
 $black: #272c36;
 $grey-overlay-color: #262933;
+$light-grey: #666;
 
 $max-page-width: 1440px;
 
@@ -23,10 +24,12 @@ $max-page-width: 1440px;
     bottom: 0;
     z-index: -1;
     transform: translateX(-101%);
-    transition: 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
 
   &:hover {
+    color: $white;
+    transition: color 0.2s ease-in-out;
     &:before {
       transform: translateX(0%);
       transition: 0.2s ease-in-out;

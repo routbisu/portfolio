@@ -22,12 +22,9 @@ const SocialLinks = () => {
         <FontAwesomeIcon className="social" icon={faGithub} />
       </a>
 
-      <a
-        href="https://drive.google.com/open?id=1KfA850p2aK9XOx7oX-3MbkRHeieTs_r6"
-        target="_blank"
-      >
+      <Link to="/about">
         <FontAwesomeIcon className="social" icon={faFilePdf} />
-      </a>
+      </Link>
     </div>
   );
 };

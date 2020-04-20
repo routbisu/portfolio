@@ -1,0 +1,176 @@
+@import '../layout/scss/';
+
+.about-container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0px 22px;
+  padding-bottom: 30px;
+
+  @media screen and (min-width: 501px) {
+    display: flex;
+  }
+
+  .left-section {
+    flex-basis: 230px;
+    .profile-section {
+      .profile-pic {
+        img {
+          width: 100%;
+        }
+      }
+      .profile-description {
+        padding: 15px 0px 5px 0px;
+        p {
+          color: $black;
+          opacity: 0.8;
+          margin-bottom: 10px;
+          font-size: 1.06rem;
+          line-height: 1.5;
+        }
+
+        h2 {
+          color: $primary-color;
+          font-size: 1.3rem;
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    .social-profiles-section {
+      .flex-wrapper {
+        display: flex;
+        justify-content: space-between;
+        a {
+          flex: 1;
+          &:first-child {
+            margin-right: 10px;
+          }
+        }
+      }
+
+      button {
+        padding: 10px 15px;
+        border-radius: 2px;
+        font-size: 1rem;
+        cursor: pointer;
+        color: $white;
+        width: 100%;
+        margin-bottom: 10px;
+
+        .wrapper {
+          display: flex;
+          align-items: center;
+
+          svg {
+            margin-right: 10px;
+            font-size: 1.5rem;
+          }
+        }
+
+        &.linkedin {
+          border: 2px solid #3077b0;
+          background: #3077b0;
+        }
+
+        &.github {
+          border: 2px solid #25292e;
+          background: #25292e;
+        }
+
+        &.resume {
+          border: 2px solid $primary-color;
+          color: $primary-color;
+          background: transparent;
+          @include button-hover-animation-1($primary-color);
+        }
+      }
+    }
+  }
+
+  .right-section {
+    flex: 1;
+    margin-top: 20px;
+
+    @media screen and (min-width: 501px) {
+      margin-top: 0px;
+      padding-left: 30px;
+    }
+
+    h2 {
+      color: $primary-color;
+      font-size: 1.65rem;
+      font-weight: 600;
+    }
+
+    .timeline-container {
+      margin-top: 20px;
+      border-left: 1px dotted $secondary-color;
+      .timeline-entry {
+        padding-left: 20px;
+        position: relative;
+        left: -6px;
+        .time {
+          color: $light-grey;
+          font-size: 1rem;
+          margin-bottom: 12px;
+          position: relative;
+          left: -1.4rem;
+          &:before {
+            content: '\25F4';
+            color: $primary-color;
+            display: inline-block;
+            width: 1em;
+            font-size: 1.5rem;
+          }
+        }
+
+        .position {
+          color: $primary-color;
+          font-weight: 500;
+          font-size: 1.1rem;
+          line-height: 1.5;
+          margin-bottom: 13px;
+        }
+
+        .company {
+          color: $primary-color;
+          font-weight: 600;
+          font-size: 1.2rem;
+          line-height: 1.5;
+          margin-bottom: 14px;
+        }
+
+        .location {
+          color: $light-grey;
+          font-weight: 600;
+          margin-bottom: 15px;
+          font-size: 0.8;
+          svg {
+            margin-right: 5px;
+            color: $primary-color;
+            font-size: 0.9rem;
+          }
+        }
+
+        .description {
+          margin-bottom: 30px;
+          ul {
+            list-style: none;
+            li {
+              margin-bottom: 8px;
+              color: $black;
+              line-height: 1.5;
+              &:before {
+                content: '\2713';
+                color: $primary-color;
+                display: inline-block;
+                font-size: 0.9rem;
+                width: 1.2em;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
