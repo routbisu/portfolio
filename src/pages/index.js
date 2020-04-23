@@ -16,11 +16,11 @@ const sliderConfig = {
 };
 
 const sliderContent = [
-  <p className="animated fadeIn">
-    I am a Web Developer.
-    <br />I am a self-motivated, and self-taught programmer, driven to build
-    amazing software that I am proud of.
-  </p>,
+  // <p className="animated fadeIn">
+  //   I am a Web Developer.
+  //   <br />I am a self-motivated, and self-taught programmer, driven to build
+  //   amazing software that I am proud of.
+  // </p>,
   <p className="animated fadeIn">
     I am a Frontend Developer.
     <br />I work with like React, Vue &amp; Angular and have a good
@@ -28,7 +28,7 @@ const sliderContent = [
   </p>,
   <p className="animated fadeIn">
     I am a Fullstack Developer.
-    <br />I have work with microservices, cloud services, monolithic
+    <br />I have worked with microservices, cloud services, monolithic
     applications, relational &amp; NoSQL databases.
   </p>,
   <p className="animated fadeIn">
@@ -52,11 +52,16 @@ const IndexPage = () => {
             <h1 className="animated fadeInDown">
               Hi, I am <span>Biswa.</span>
             </h1>
-            <Slider {...sliderConfig}>
+            {/* <Slider {...sliderConfig}>
               {sliderContent.map((content, i) => (
                 <div key={i}>{content}</div>
               ))}
-            </Slider>
+            </Slider> */}
+            <p className="animated fadeIn">
+              I am a Full Stack Developer.
+              <br />I work with React, Vue &amp; Node.js and have a good
+              understanding of user experience (UX) principles.
+            </p>
             <Link to={getLinkUrl('PROJECTS')}>
               <button className="see-more animated flipInY">
                 <span>See my work</span>
