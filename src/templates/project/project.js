@@ -24,11 +24,15 @@ const Project = ({
   const [selectedMenu, setSelectedMenu] = useState(projectType.type);
 
   const handleChange = page => {
-    navigate(
-      `/projects/${
-        projectTypes.find(a => a.type === selectedMenu).slug
-      }/${page}`
-    );
+    if (page.startsWith('http')) {
+      if (window) window.location.href = page;
+    } else {
+      navigate(
+        `/projects/${
+          projectTypes.find(a => a.type === selectedMenu).slug
+        }/${page}`
+      );
+    }
   };
 
   const ProjectsDropdown = () => (
