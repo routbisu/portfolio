@@ -171,7 +171,7 @@ const Project = ({
           </>
         )}
 
-        {showcase || (videoLink && <h2>Showcase</h2>)}
+        {(showcase || videoLink) && <h2>Showcase</h2>}
 
         {showcase && (
           <>

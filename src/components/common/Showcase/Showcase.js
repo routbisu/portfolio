@@ -7,10 +7,14 @@ const Showcase = ({ data, projectType, projectDetails }) => {
   return (
     <div className="showcase-container">
       {data
-        ? data.map((label, i) => (
+        ? data.map((item, i) => (
             <div className="video-container">
-              <img src={`${imagesBaseUrl}${i + 1}.jpg`} alt={label} key={i} />
-              {label && <p className="label">{label}</p>}
+              <img
+                src={`${imagesBaseUrl}${i + 1}.jpg`}
+                alt={item.label}
+                key={i}
+              />
+              {item.label && <p className="label">{item.label}</p>}
             </div>
           ))
         : null}

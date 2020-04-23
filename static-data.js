@@ -94,7 +94,7 @@ const projects = {
           link:
             'https://www.youtube.com/embed/i6awlP9YGp4?autoplay=1&controls=0',
           label: 'CMS System walkthrough',
-          videoRatio: '66.6%',
+          videoRatio: '66.4%',
           hideInfo: true,
           external: {
             link:
@@ -174,7 +174,7 @@ const projects = {
           link:
             'https://www.youtube.com/embed/NyiZyyVV1RY?autoplay=1&controls=0',
           label: 'XInsure walkthrough',
-          videoRatio: '64.3%',
+          videoRatio: '64.2%',
           hideInfo: true,
           external: {
             link:
@@ -227,11 +227,12 @@ const projects = {
         skills.csharp,
         skills.aspnet,
         skills.sqlserver
-      ]
+      ],
+      showcase: [{ label: 'TDM Portal' }]
     },
     {
       title: 'ErrorDumps',
-      slug: 'error-dumps',
+      slug: 'errordumps',
       duration: 'Feb 2015 - Jan 2016',
       org: 'Infosys Limited',
       description: [
@@ -251,6 +252,11 @@ const projects = {
         skills.csharp,
         skills.aspnet,
         skills.sqlserver
+      ],
+      showcase: [
+        { label: 'Errordumps Portal' },
+        { label: 'Analysing log output from Mainframe application' },
+        { label: 'Recommendation engine' }
       ]
     },
     {
@@ -276,22 +282,49 @@ const projects = {
     }
   ],
   SIDE: [
-    { title: 'Suppr', slug: 'suppr' },
-    { title: 'Baadi', slug: 'baadi' },
+    {
+      title: 'Suppr',
+      slug: 'suppr',
+      duration: 'Feb 2019 - Dec 2019',
+      description: [
+        `Suppr is an order management system, designed for any kind of restaurant, food court, hawker center or literally any food joint that has access to a tablet device or computer.`,
+        `I have been to several restaurants where the number of waiters is not sufficient for the number of customers that comes. And hiring more waiters means adding to the operational costs of the restaurant. A lot of times customers have to wait for the waiter to come to take their order, and if they want to make changes to the order, they have to call the waiter again and Wait for him to come. When they are done with their meal and want to request the cheque, they have to call for the waiter again.`,
+        `What Suppr is allows automating the ordering process by taking the presence of the waiter out of the equation, enabling customers to place orders directly with the kitchen, without the need of installing an app? They can do it right from their phone by scanning a unique QR code. What this means for restaurants is improved table utilization, better customer experience and they also save money because they don’t need to hire as many waiters as before. So, I will show you how this is done in this short demo.`
+      ],
+      skillSet: [
+        skills.react,
+        skills.redux,
+        skills.html5,
+        skills.css3,
+        skills.nodejs,
+        skills.mongodb,
+        skills.firebase,
+        skills.heroku
+      ],
+      videoLink: [
+        {
+          link: 'https://www.youtube.com/embed/ApaV2N0-3Rg',
+          label: 'Suppr walkthrough',
+          videoRatio: '62.6%',
+          hideInfo: true,
+          external: {
+            link: 'https://www.youtube.com/watch?v=ApaV2N0-3Rg',
+            label: 'Watch on YouTube',
+            type: linkTypes.youtube
+          }
+        }
+      ]
+    },
     {
       title: 'Node File Logger',
-      slug: 'node-file-logger',
-      links: [
-        { url: '', type: linkTypes.github },
-        { url: '', type: linkTypes.demo }
-      ]
+      slug: 'https://www.npmjs.com/package/node-file-logger',
+      external: true
     },
     {
       title: 'React Calendar',
       slug: 'https://github.com/routbisu/react-calendar',
       external: true
-    },
-    { title: 'Movie Hunt', slug: 'movie-hunt' }
+    }
   ]
 };
 

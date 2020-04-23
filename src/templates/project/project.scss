@@ -122,6 +122,7 @@
         color: $primary-color;
         font-size: 1.65rem;
         font-weight: 500;
+        margin-bottom: 19px;
       }
 
       .project-logo {
@@ -138,7 +139,7 @@
         color: $black;
         opacity: 0.8;
         font-size: 1rem;
-        margin-top: 15px;
+        margin-bottom: 15px;
         padding-left: 2px;
         svg {
           margin-right: 6px;
@@ -150,7 +151,7 @@
         font-weight: 600;
         color: $black;
         font-size: 1.1rem;
-        margin: 17px 0px;
+        margin-bottom: 15px;
       }
     }
   }
