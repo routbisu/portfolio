@@ -138,8 +138,6 @@ const Project = ({
       videoLink
     } = projectDetails;
 
-    console.log('skillSet', skillSet);
-
     return (
       <article className="article">
         {description && description.map((desc, i) => <p key={i}>{desc}</p>)}

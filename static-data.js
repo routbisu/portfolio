@@ -16,6 +16,7 @@ const skills = {
     padding: 7
   },
 
+  angular: { name: 'Angular', logo: 'angular.svg', padding: 8 },
   react: { name: 'React', logo: 'react.svg', padding: 4 },
   redux: { name: 'Redux', logo: 'redux.svg', padding: 7 },
   gatsby: { name: 'Gatsby', logo: 'gatsby.svg', padding: 7 },
@@ -42,6 +43,8 @@ const skills = {
   firebase: { name: 'Firebase', logo: 'firebase.svg', padding: 5 },
   redis: { name: 'Redis', logo: 'redis.svg', padding: 8 },
   sqlite: { name: 'SQLite', logo: 'sqlite.svg', padding: 7 },
+  sqlserver: { name: 'SQL Server', logo: 'sqlserver.svg', padding: 10 },
+  fxchart: { name: 'FX Chart', logo: 'fxchart.svg', padding: 5 },
 
   nginx: { name: 'Nginx', logo: 'nginx.png', padding: 6, hideName: true },
   serverless: { name: 'Serverless', logo: 'serverless.svg', padding: 6 },
@@ -63,8 +66,8 @@ const linkTypes = {
 const projects = {
   WORK: [
     {
-      title: 'SkoolNet',
-      slug: 'skoolnet',
+      title: 'Website CMS',
+      slug: 'website-cms',
       duration: 'June 2019 - Present',
       org: 'NTUC Enterprise Digital, Singapore',
       skillSet: [
@@ -78,13 +81,28 @@ const projects = {
         skills.nodejs
       ],
       description: [
-        `SkoolNet is a CMS & Parent’s Portal for pre-school chains. SkoolNet was built from scratch as part of the digital transformation initiatives of NTUC. SkoolNet has a CMS module that allows schools to manage the content of their websites & dynamic sections like News & Events. The CMS allows them to add new items to the website and deploy a freshly generated static website to production from a web portal.`
+        `This is a CMS & Parent’s Portal for pre-school chains. This was built from scratch as part of the digital transformation initiatives of the company. It has a CMS module that allows schools to manage the content of their websites & dynamic sections like News & Events. The CMS allows them to add new items to the website and deploy a freshly generated static website to production from a web portal.`
       ],
       responsibilities: [
-        `Developed the SkoolNet content management system (CMS) module from scratch using React.`,
+        `Developed the Content Management System (CMS) module from scratch using React.`,
         `Architected a static website generation & deployment platform for schools using Gatsby.`,
         `Created a reusable library of React components and deployed it in the company intranet.`,
         `Migrated 4 school websites from legacy technologies to Gatsby & helped improved their UX & SEO.`
+      ],
+      videoLink: [
+        {
+          link:
+            'https://www.youtube.com/embed/i6awlP9YGp4?autoplay=1&controls=0',
+          label: 'CMS System walkthrough',
+          videoRatio: '66.6%',
+          hideInfo: true,
+          external: {
+            link:
+              'https://www.youtube.com/watch?v=i6awlP9YGp4&feature=youtu.be',
+            label: 'Watch on YouTube',
+            type: linkTypes.youtube
+          }
+        }
       ]
     },
     {
@@ -92,7 +110,6 @@ const projects = {
       slug: 'wings-suite',
       duration: 'Sep 2018 - Jun 2019',
       org: 'Sandisk - Western Digital',
-      logo: 'wings-logo.png',
       videoLink: [
         {
           link:
@@ -127,10 +144,136 @@ const projects = {
         `Developed guidelines for CI/CD & automated unit testing for the project.`
       ]
     },
-    { title: 'XInsure', slug: 'xinsure' },
-    { title: 'Instalment Billing', slug: 'instalment-billing' },
-    { title: 'Obfuscation Engine', slug: 'obfuscation-engine' },
-    { title: 'ErrorDumps', slug: 'error-dumps' }
+    {
+      title: 'XInsure',
+      slug: 'xinsure',
+      duration: 'May 2017 - Sep 2018',
+      org: 'Xceedance Consulting',
+      description: [
+        `XInsure is a core business insurance SAAS product for insurance companies, brokers and re-insurers. It is a comprehensive software suite that has several modules like Rule Engine, User Management, Party Management, Question Engine etc. It is an end-to-end, modular, core policy administration suite for the life insurance, annuities, savings, pension and medical markets.`
+      ],
+      responsibilities: [
+        `Implemented core business modules for the product.`,
+        `Wrote React components and services for performing CRUD operations.`,
+        `Wrote unit tests for JavaScript code using Jest.`,
+        `Developed API endpoints using Node & Express.`
+      ],
+      skillSet: [
+        skills.react,
+        skills.redux,
+        skills.html5,
+        skills.css3,
+        skills.nodejs,
+        skills.mongodb,
+        skills.electron,
+        skills.docker,
+        skills.aws
+      ],
+      videoLink: [
+        {
+          link:
+            'https://www.youtube.com/embed/NyiZyyVV1RY?autoplay=1&controls=0',
+          label: 'XInsure walkthrough',
+          videoRatio: '64.3%',
+          hideInfo: true,
+          external: {
+            link:
+              'https://www.youtube.com/watch?v=NyiZyyVV1RY&feature=youtu.be',
+            label: 'Watch on YouTube',
+            type: linkTypes.youtube
+          }
+        }
+      ]
+    },
+    {
+      title: 'Installment Billing Portal',
+      slug: 'installment-billing-portal',
+      duration: 'Nov 2016 - May 2017',
+      org: 'Xceedance Consulting',
+      description: [
+        `This portal for an insurance company allows customers to pay their insurance premium in interest free EMIs. The target users for this portal are - customers and brokers. They can update customer billing and contact details, upgrade or renew their policy online, cancel their policy, create claim requests etc. The portal also allows generation of several kinds of reports like Broker Fee report, Notifications report etc.`
+      ],
+      responsibilities: [
+        `Worked with UX team to write HTML code for the web portal.`,
+        `Created Angular components & services for the portal to consume API end points.`,
+        `Built web APIs using Node & Express.`,
+        `Configured a continuous deployment environment on Jenkins for backend deployment.`
+      ],
+      skillSet: [
+        skills.angular,
+        skills.html5,
+        skills.css3,
+        skills.nodejs,
+        skills.mysql
+      ]
+    },
+    {
+      title: 'TDM System',
+      slug: 'obfuscation-engine',
+      duration: 'Feb 2016 - Aug 2017',
+      org: 'Emids Technologies',
+      description: [
+        `Test Data Management is an obfuscation engine & test data generation framework for a large hospital revenue cycle management company. Users can generate huge amounts of valid obfuscated test data from production data to protect personal information of customers. There is a simple web portal that allows to manage the generation & deployment of the test data to test environments for developers to test.`
+      ],
+      responsibilities: [
+        `Contributed to the solution design and database architecture design.`,
+        `Developed Stored Procedures & functions on SQL Server, to generate obfuscated data`,
+        `Worked with the QA team for end-to-end testing of the developed modules & procedures.`
+      ],
+      skillSet: [
+        skills.angular,
+        skills.html5,
+        skills.css3,
+        skills.csharp,
+        skills.aspnet,
+        skills.sqlserver
+      ]
+    },
+    {
+      title: 'ErrorDumps',
+      slug: 'error-dumps',
+      duration: 'Feb 2015 - Jan 2016',
+      org: 'Infosys Limited',
+      description: [
+        `Errordumps is a web-based log processing tool that helps take out relevant insights and analytics from logs generated from a Mainframe batch processing queue. It keeps track of how issues were fixed and suggests recommendation when similar issues appear in the future.`
+      ],
+      responsibilities: [
+        `Lead the development team consisting of mainframe engineers & frontend developers.`,
+        `Created a web application from scratch using PHP & jQuery.`,
+        `Wrote a persistence layer in SQL Server.`,
+        `Developed web APIs using C# & ASP.Net MVC`
+      ],
+      skillSet: [
+        skills.php,
+        skills.js,
+        skills.html5,
+        skills.css3,
+        skills.csharp,
+        skills.aspnet,
+        skills.sqlserver
+      ]
+    },
+    {
+      title: 'Energy Manager Suite',
+      slug: 'energy-manager-suite',
+      duration: 'May 2012 - Jan 2015',
+      org: 'Infosys Limited',
+      description: [
+        `The Energy Manager Suite of tools is a web-based application that helps to monitor, analyze and report energy usage. It had three major modules – Energy manager, Cost Manager & Bill Manager. This project was about maintaining & enhancing legacy code and migrating it to newer technologies.`
+      ],
+      responsibilities: [
+        `Developed charts for the energy manager website using chart FX.`,
+        `Worked with the UX team to develop pixel perfect HTML pages for the web portal.`,
+        `Developed web APIs using C# & ASP.Net MVC.`
+      ],
+      skillSet: [
+        skills.csharp,
+        skills.sqlserver,
+        skills.aspnet,
+        skills.js,
+        skills.fxchart
+      ]
+    }
   ],
   SIDE: [
     { title: 'Suppr', slug: 'suppr' },
@@ -167,6 +310,7 @@ const allSkills = [
       skills.typescript,
       skills.react,
       skills.redux,
+      skills.angular,
       skills.vuejs,
       skills.svelte,
       skills.nextjs,

@@ -54,7 +54,7 @@
           margin-left: 15px;
           color: $primary-color;
           font-size: 1rem;
-          display: none;
+          color: $white;
         }
 
         &:hover,
@@ -64,6 +64,7 @@
           svg {
             display: inherit;
             transition: 0.3s;
+            color: $primary-color;
           }
         }
 

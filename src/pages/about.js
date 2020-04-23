@@ -84,8 +84,8 @@ const About = () => {
         <div className="right-section">
           <h2>Timeline</h2>
           <div className="timeline-container">
-            {timeline.map(entry => (
-              <div className="timeline-entry">
+            {timeline.map((entry, i) => (
+              <div className="timeline-entry" key={i}>
                 <div className="time">{entry.time}</div>
                 <div className="position">{entry.position}</div>
                 <div className="company">{entry.company}</div>
