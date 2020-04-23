@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'gatsby';
+import { aboutLinks } from '../config/appConfig';
 
 const SocialLinks = () => {
   return (
@@ -22,9 +23,9 @@ const SocialLinks = () => {
         <FontAwesomeIcon className="social" icon={faGithub} />
       </a>
 
-      <Link to="/about">
+      <a href={aboutLinks.cv} target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon className="social" icon={faFilePdf} />
-      </Link>
+      </a>
     </div>
   );
 };

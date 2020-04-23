@@ -104,11 +104,8 @@
 
     .timeline-container {
       margin-top: 20px;
-      border-left: 1px dotted $secondary-color;
       .timeline-entry {
         padding-left: 20px;
-        position: relative;
-        left: -6px;
         .time {
           color: $light-grey;
           font-size: 1rem;
@@ -129,13 +126,13 @@
           font-weight: 500;
           font-size: 1.1rem;
           line-height: 1.5;
-          margin-bottom: 13px;
+          margin-bottom: 10px;
         }
 
         .company {
           color: $primary-color;
           font-weight: 600;
-          font-size: 1.2rem;
+          font-size: 1.25rem;
           line-height: 1.5;
           margin-bottom: 14px;
         }

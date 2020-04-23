@@ -63,8 +63,8 @@ const linkTypes = {
 const projects = {
   WORK: [
     {
-      title: 'NFC Websites Platform',
-      slug: 'nfc-websites-platform',
+      title: 'SkoolNet',
+      slug: 'skoolnet',
       duration: 'June 2019 - Present',
       org: 'NTUC Enterprise Digital, Singapore',
       skillSet: [
@@ -78,21 +78,20 @@ const projects = {
         skills.nodejs
       ],
       description: [
-        `Wings Suite is an internal product for automation of processes related to firmware management & testing for storage devices. It enables firmware engineers to test storage devices from a web based interface in contrast to the existing system where they use command line tools to run these tests. Wings also allows them to save test suites, decode test results, manage properties of storage devices and perform failure analysis all from a user-friendly web portal.`
+        `SkoolNet is a CMS & Parent’s Portal for pre-school chains. SkoolNet was built from scratch as part of the digital transformation initiatives of NTUC. SkoolNet has a CMS module that allows schools to manage the content of their websites & dynamic sections like News & Events. The CMS allows them to add new items to the website and deploy a freshly generated static website to production from a web portal.`
       ],
       responsibilities: [
-        `Hired and managed a small team of frontend engineers & QA engineers.`,
-        `Architected a scalable fronted development platform using React and Redux.`,
-        `Developed mockups and performed user-experience studies with stakeholders.`,
-        `Mentored two interns & trained them on Frontend development principles.`,
-        `Developed guidlines for CI/CD & automated unit testing for the project.`
+        `Developed the SkoolNet content management system (CMS) module from scratch using React.`,
+        `Architected a static website generation & deployment platform for schools using Gatsby.`,
+        `Created a reusable library of React components and deployed it in the company intranet.`,
+        `Migrated 4 school websites from legacy technologies to Gatsby & helped improved their UX & SEO.`
       ]
     },
     {
       title: 'Wings Suite',
       slug: 'wings-suite',
-      duration: 'Sept 2018 - June 2019',
-      org: 'Sandisk (Western Digital)',
+      duration: 'Sep 2018 - Jun 2019',
+      org: 'Sandisk - Western Digital',
       logo: 'wings-logo.png',
       videoLink: [
         {
@@ -121,11 +120,11 @@ const projects = {
         `Wings Suite is an internal product for automation of processes related to firmware management & testing for storage devices. It enables firmware engineers to test storage devices from a web based interface in contrast to the existing system where they use command line tools to run these tests. Wings also allows them to save test suites, decode test results, manage properties of storage devices and perform failure analysis all from a user-friendly web portal.`
       ],
       responsibilities: [
-        `Hired and managed a small team of frontend engineers & QA engineers.`,
+        `Hired and managed a team of Frontend & QA engineers.`,
         `Architected a scalable fronted development platform using React and Redux.`,
-        `Developed mockups and performed user-experience studies with stakeholders.`,
-        `Mentored two interns & trained them on Frontend development principles.`,
-        `Developed guidlines for CI/CD & automated unit testing for the project.`
+        `Developed mock-ups and performed user-experience studies with stakeholders.`,
+        `Mentored two interns on Frontend development.`,
+        `Developed guidelines for CI/CD & automated unit testing for the project.`
       ]
     },
     { title: 'XInsure', slug: 'xinsure' },

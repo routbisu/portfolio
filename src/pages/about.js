@@ -63,14 +63,14 @@ const About = () => {
                 </button>
               </a>
             </div>
-            <a href={aboutLinks.resume} target="_blank" style={{ flex: 1 }}>
+            {/* <a href={aboutLinks.resume} target="_blank" style={{ flex: 1 }}>
               <button className="resume">
                 <div className="wrapper">
                   <FontAwesomeIcon icon={faFilePdf} />
                   Resume
                 </div>
               </button>
-            </a>
+            </a> */}
             <a href={aboutLinks.cv} target="_blank" style={{ flex: 1 }}>
               <button className="resume">
                 <div className="wrapper">
@@ -117,20 +117,18 @@ const About = () => {
               <div className="location">
                 <FontAwesomeIcon icon={faGlobeAsia} /> Odisha, India
               </div>
+
               <div className="description">
                 <ul>
                   <li>
-                    Developed web applications using React &amp; Gatsby - a
-                    static site generator.
+                    Bachelor of Technology in Computer Science from College of
+                    Engineering, Bhubaneswar.
                   </li>
+                  <li>Worked part-time as a web development freelancer.</li>
+                  <li>Member, Opera Software Campus Crew Programme</li>
                   <li>
-                    Developed control panels with features similar to WordPress
-                    for the static sites.
-                  </li>
-                  <li>Exposure to server-less architecture.</li>
-                  <li>
-                    Tech stack: React, Redux, Material UI, Gatsby, AWS Lambda,
-                    DynamoDB
+                    Summer Internship at Koustuv Systems (College in-house
+                    software dev center)
                   </li>
                 </ul>
               </div>
