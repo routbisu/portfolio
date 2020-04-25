@@ -138,7 +138,7 @@ const projects = {
       ],
       responsibilities: [
         `Hired and managed a team of Frontend & QA engineers.`,
-        `Architected a scalable fronted development platform using React and Redux.`,
+        `Facilitated technical planning & helped break down features into technical tasks.`,
         `Developed mock-ups and performed user-experience studies with stakeholders.`,
         `Mentored two interns on Frontend development.`,
         `Developed guidelines for CI/CD & automated unit testing for the project.`
