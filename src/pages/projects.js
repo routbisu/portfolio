@@ -1,7 +1,9 @@
 import { navigate } from 'gatsby';
 
 const Projects = () => {
-  navigate('/projects/work/wings-suite');
+  if (typeof window !== 'undefined') {
+    navigate('/projects/work/wings-suite');
+  }
   return null;
 };
 
