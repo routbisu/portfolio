@@ -52,16 +52,27 @@ const Layout = ({ children, heading, home, showHomeButton }) => {
         <div className="main-menu tablet-and-desktop-only">
           {!home && <Link to="/">Home</Link>}
           {showHomeButton && <Link to="/">Home</Link>}
-          {menuItems.map(item => (
-            <Link
-              to={item.link}
-              key={item.key}
-              activeClassName="active"
-              partiallyActive={true}
-            >
-              {item.label}
-            </Link>
-          ))}
+          {menuItems.map(item =>
+            item.external ? (
+              <a
+                href={item.link}
+                key={item.key}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {item.label}
+              </a>
+            ) : (
+              <Link
+                to={item.link}
+                key={item.key}
+                activeClassName="active"
+                partiallyActive={true}
+              >
+                {item.label}
+              </Link>
+            )
+          )}
         </div>
         <MobileMenu />
       </div>

@@ -3,10 +3,10 @@ export const menuItems = [
   {
     key: 'PROJECTS',
     label: 'Projects',
-    link: '/projects/work/wings-suite'
+    link: '/projects'
   },
   { key: 'ABOUT', label: 'About', link: '/about' },
-  // { key: 'BLOG', label: 'Blog', link: '/blog' }
+  { key: 'BLOG', label: 'Blog', link: 'https://blog.biswa.co', external: true },
   { key: 'CONTACT', label: 'Contact', link: '/contact' }
 ];
 

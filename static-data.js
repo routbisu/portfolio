@@ -15,6 +15,7 @@ const skills = {
     logo: 'typescript.svg',
     padding: 7
   },
+  flow: { name: 'Flow', logo: 'flow.svg', padding: 7 },
 
   angular: { name: 'Angular', logo: 'angular.svg', padding: 8 },
   react: { name: 'React', logo: 'react.svg', padding: 4 },
@@ -341,6 +342,7 @@ const allSkills = [
       skills.js,
       skills.es6,
       skills.typescript,
+      skills.flow,
       skills.react,
       skills.redux,
       skills.angular,

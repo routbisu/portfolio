@@ -65,11 +65,22 @@ const MobileMenu = () => {
           <Link to="/" className="menu-item">
             Home
           </Link>
-          {menuItems.map(item => (
-            <Link to={item.link} className="menu-item" key={item.link}>
-              {item.label}
-            </Link>
-          ))}
+          {menuItems.map(item =>
+            item.external ? (
+              <a
+                href={item.link}
+                key={item.key}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {item.label}
+              </a>
+            ) : (
+              <Link to={item.link} className="menu-item" key={item.link}>
+                {item.label}
+              </Link>
+            )
+          )}
         </div>
 
         <div className="social-links">
