@@ -58,9 +58,9 @@ const IndexPage = () => {
               ))}
             </Slider> */}
             <p className="animated fadeIn">
-              I am a Full Stack Developer.
-              <br />I work with React, Vue &amp; Node.js and have a good
-              understanding of user experience (UX) principles.
+              I am a Web Development Specialist.
+              <br />I love building beautiful user experiences with JavaScript,
+              TypeScript, React, Redux &amp; NodeJS.
             </p>
             <Link to={getLinkUrl('PROJECTS')}>
               <button className="see-more animated flipInY">
