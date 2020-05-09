@@ -10,7 +10,7 @@ const NotFoundPage = () => {
         <div className="video-overlay">
           <div className="center-text">
             <h1 className="animated fadeInDown">
-              😭<span> Sorry!</span>
+              <span role="img">😭</span> <span> Sorry!</span>
             </h1>
             <p className="animated fadeIn">This page does not exist.</p>
             <Link to="/">
