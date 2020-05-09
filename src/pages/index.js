@@ -60,7 +60,7 @@ const IndexPage = () => {
             <p className="animated fadeIn">
               I am a Web Development Specialist.
               <br />I love building beautiful user experiences with JavaScript,
-              TypeScript, React, Redux &amp; NodeJS.
+              React &amp; Node.
             </p>
             <Link to={getLinkUrl('PROJECTS')}>
               <button className="see-more animated flipInY">

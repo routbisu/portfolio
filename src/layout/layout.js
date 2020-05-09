@@ -8,7 +8,7 @@ import { Link } from 'gatsby';
 import { menuItems } from '../config/appConfig';
 import MobileMenu from './MobileMenu/MobileMenu';
 
-const Layout = ({ children, heading, home, showHomeButton }) => {
+const Layout = ({ children, heading, home, showHomeButton, hideMenu }) => {
   const handleScroll = () => {
     if (window) {
       if (window.pageYOffset > 20) {
@@ -49,32 +49,36 @@ const Layout = ({ children, heading, home, showHomeButton }) => {
             <img src={Logo} alt="Logo" />
           </Link>
         </div>
-        <div className="main-menu tablet-and-desktop-only">
-          {!home && <Link to="/">Home</Link>}
-          {showHomeButton && <Link to="/">Home</Link>}
-          {menuItems.map(item =>
-            item.external ? (
-              <a
-                href={item.link}
-                key={item.key}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {item.label}
-              </a>
-            ) : (
-              <Link
-                to={item.link}
-                key={item.key}
-                activeClassName="active"
-                partiallyActive={true}
-              >
-                {item.label}
-              </Link>
-            )
-          )}
-        </div>
-        <MobileMenu />
+        {!hideMenu && (
+          <>
+            <div className="main-menu tablet-and-desktop-only">
+              {!home && <Link to="/">Home</Link>}
+              {showHomeButton && <Link to="/">Home</Link>}
+              {menuItems.map(item =>
+                item.external ? (
+                  <a
+                    href={item.link}
+                    key={item.key}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {item.label}
+                  </a>
+                ) : (
+                  <Link
+                    to={item.link}
+                    key={item.key}
+                    activeClassName="active"
+                    partiallyActive={true}
+                  >
+                    {item.label}
+                  </Link>
+                )
+              )}
+            </div>
+            <MobileMenu />
+          </>
+        )}
       </div>
       <div className="main-content">{children}</div>
     </div>
