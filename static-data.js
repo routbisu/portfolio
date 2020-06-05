@@ -139,6 +139,8 @@ const projects = {
       ],
       responsibilities: [
         `Hired and managed a team of Frontend & QA engineers.`,
+        `Created a dynamic form-generator in React.`,
+        `Created several React components with highly-complex functionality using concepts like lazy-loading and optimistic UI.`,
         `Facilitated technical planning & helped break down features into technical tasks.`,
         `Developed mock-ups and performed user-experience studies with stakeholders.`,
         `Mentored two interns on Frontend development.`,
