@@ -286,6 +286,35 @@ const projects = {
   ],
   SIDE: [
     {
+      title: 'Animal Exchange',
+      slug: 'animal-exchange',
+      description: [
+        `Animal Exchange is an investment platform for animal related projects with a mission to democratize the ending of extinction and promotion of sustainable farming. It is a revolutionary funding platform for farmers and scientists to end extinction and conserve wildlife. The transactions are built on a blockchain for transparency. They provide a marketplace – auction, crowdfunding & ecommerce platform to buy and sell digital tokens.`,
+        `Case study on Rhinos Crowdfunding campaign: The funds raised in the research token offering will be used to extract DNA Sequences from a group of Rhinos. The DNA sequences will be fertilised into an embryo and planted into surrogates. The intention is to produce rhino calves through the Invitro (IVF) process in an effort to end extinction of rhinos.`
+      ],
+      responsibilities: [
+        `Own and lead frontend development for the marketplace portal.`,
+        `Work closely with the product team & UX designers to create a pixel perfect & responsive website.`,
+        `Created unit tests & continuous deployment for the frontend codebase.`,
+        `Integration of the marketplace with payment providers like PayFast and Binance.`
+      ],
+      skillSet: [
+        skills.react,
+        skills.redux,
+        skills.html5,
+        skills.css3,
+        skills.sass,
+        skills.es6,
+        skills.typescript,
+        skills.golang
+      ],
+      showcase: [
+        { label: 'Rhino DNA sequences crowdfunding campaign' },
+        { label: 'Auction platform for endangered animals' },
+        { label: 'Checkout page for buying tokens' }
+      ]
+    },
+    {
       title: 'Suppr',
       slug: 'suppr',
       duration: 'Feb 2019 - Dec 2019',
