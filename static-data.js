@@ -16,9 +16,13 @@ const skills = {
     padding: 7
   },
   flow: { name: 'Flow', logo: 'flow.svg', padding: 7 },
+  graphql: { name: 'Graph QL', logo: 'graphql.svg', padding: 7 },
+  apollo: { name: 'Apollo Client', logo: 'apollo.svg', padding: 7 },
+  sentry: { name: 'Sentry', logo: 'sentry.svg', padding: 9 },
 
   angular: { name: 'Angular', logo: 'angular.svg', padding: 8 },
   react: { name: 'React', logo: 'react.svg', padding: 4 },
+  reactnative: { name: 'React Native', logo: 'react.svg', padding: 4 },
   redux: { name: 'Redux', logo: 'redux.svg', padding: 7 },
   gatsby: { name: 'Gatsby', logo: 'gatsby.svg', padding: 7 },
   nextjs: { name: 'NextJS', logo: 'nextjs.svg', padding: 6 },
@@ -67,24 +71,30 @@ const linkTypes = {
 const projects = {
   WORK: [
     {
-      title: 'Website CMS',
-      slug: 'website-cms',
+      title: 'SN Staff',
+      slug: 'sn-staff',
       duration: 'June 2019 - Present',
-      org: 'NTUC Enterprise Digital, Singapore',
+      org: 'NE Digital (NTUC), Singapore',
       skillSet: [
         skills.react,
+        skills.reactnative,
         skills.redux,
         skills.gatsby,
         skills.material_ui,
         skills.typescript,
         skills.html5,
         skills.css3,
-        skills.nodejs
+        skills.nodejs,
+        skills.graphql,
+        skills.apollo,
+        skills.sentry
       ],
       description: [
-        `This is a CMS & Parent’s Portal for pre-school chains. This was built from scratch as part of the digital transformation initiatives of the company. It has a CMS module that allows schools to manage the content of their websites & dynamic sections like News & Events. The CMS allows them to add new items to the website and deploy a freshly generated static website to production from a web portal.`
+        `SN Staff is a suite of applications for a childcare & early childhood education business run by a major Singaporean conglomerate, that touches the lives of thousands of Singaporeans. I have worked for two major projects during this phase - a content management system for managing several static websites for preschool chains, from a single interface, and building a mobile app that is a social network for interaction between parents and teachers about their kids activities, attendance monitoring, transportation and more. Here is some more infotmation about NTUC Social Enterprises - https://ntucenterprise.sg/`,
+        `SN Staff is part of a larger school management system project. This was built from scratch as part of the digital transformation initiatives of the company. It also contains a CMS module that allows schools to manage the content of their websites & dynamic sections like News & Events. The CMS allows them to add new items to the website and deploy a freshly generated static website to production from a web portal.`
       ],
       responsibilities: [
+        `Created new components and screens for the SN Staff React Native app.`,
         `Developed the Content Management System (CMS) module from scratch using React.`,
         `Architected a static website generation & deployment platform for schools using Gatsby.`,
         `Created a reusable library of React components and deployed it in the company intranet.`,
@@ -382,7 +392,11 @@ const allSkills = [
       skills.nextjs,
       skills.gatsby,
       skills.material_ui,
-      skills.electron
+      skills.electron,
+      skills.reactnative,
+      skills.graphql,
+      skills.apollo,
+      skills.sentry
     ]
   },
   {
