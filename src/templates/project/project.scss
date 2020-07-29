@@ -57,6 +57,12 @@
           color: $white;
         }
 
+        &.external {
+          svg {
+            font-size: 0.85rem;
+          }
+        }
+
         &:hover,
         &.active {
           color: $primary-color;
@@ -123,6 +129,18 @@
         font-size: 1.65rem;
         font-weight: 500;
         margin-bottom: 19px;
+
+        a {
+          display: flex;
+          align-items: baseline;
+
+          svg {
+            margin-left: 12px;
+            font-size: 1.12rem;
+            color: $light-grey;
+            opacity: 0.8;
+          }
+        }
       }
 
       .project-logo {

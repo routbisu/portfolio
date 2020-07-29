@@ -29,10 +29,10 @@
   .options {
     position: absolute;
     width: 100%;
-    background: $highly-light-grey-bg;
     z-index: 1;
     max-height: 280px;
     overflow: auto;
+    background: $highly-light-grey-bg;
 
     button.option {
       width: 100%;
@@ -43,6 +43,10 @@
       text-transform: capitalize;
       text-align: left;
       font-size: 1rem;
+      svg {
+        font-size: 0.8rem;
+        float: right;
+      }
     }
   }
 

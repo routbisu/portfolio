@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import './Dropdown.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import {
+  faAngleDown,
+  faExternalLinkAlt
+} from '@fortawesome/free-solid-svg-icons';
 
 const Dropdown = ({
   options,
@@ -37,15 +40,18 @@ const Dropdown = ({
     if (ddMenu.contains(evt.target)) closeMenu();
   };
 
-  const getOptions = option => (
-    <button
-      className="option"
-      key={option.key}
-      onClick={evt => changeHandler(evt, option.key)}
-    >
-      {option.value}
-    </button>
-  );
+  const getOptions = option => {
+    return (
+      <button
+        className="option"
+        key={option.key}
+        onClick={evt => changeHandler(evt, option.key)}
+      >
+        {option.value}{' '}
+        {option.external && <FontAwesomeIcon icon={faExternalLinkAlt} />}
+      </button>
+    );
+  };
 
   return (
     <div className="dropdown-container">

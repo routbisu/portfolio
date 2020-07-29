@@ -8,12 +8,8 @@ const Showcase = ({ data, projectType, projectDetails }) => {
     <div className="showcase-container">
       {data
         ? data.map((item, i) => (
-            <div className="video-container">
-              <img
-                src={`${imagesBaseUrl}${i + 1}.jpg`}
-                alt={item.label}
-                key={i}
-              />
+            <div className="video-container" key={i}>
+              <img src={`${imagesBaseUrl}${i + 1}.jpg`} alt={item.label} />
               {item.label && <p className="label">{item.label}</p>}
             </div>
           ))

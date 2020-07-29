@@ -298,6 +298,7 @@ const projects = {
     {
       title: 'Animal Exchange',
       slug: 'animal-exchange',
+      externalLink: 'https://staging.animalexchange.io',
       description: [
         `Animal Exchange is an investment platform for animal related projects with a mission to democratize the ending of extinction and promotion of sustainable farming. It is a revolutionary funding platform for farmers and scientists to end extinction and conserve wildlife. The transactions are built on a blockchain for transparency. They provide a marketplace – auction, crowdfunding & ecommerce platform to buy and sell digital tokens.`,
         `Case study on Rhinos Crowdfunding campaign: The funds raised in the research token offering will be used to extract DNA Sequences from a group of Rhinos. The DNA sequences will be fertilised into an embryo and planted into surrogates. The intention is to produce rhino calves through the Invitro (IVF) process in an effort to end extinction of rhinos.`
@@ -328,6 +329,7 @@ const projects = {
       title: 'Suppr',
       slug: 'suppr',
       duration: 'Feb 2019 - Dec 2019',
+      externalLink: 'https://partner.suppr.in',
       description: [
         `Suppr is an order management system, designed for any kind of restaurant, food court, hawker center or literally any food joint that has access to a tablet device or computer.`,
         `I have been to several restaurants where the number of waiters is not sufficient for the number of customers that comes. And hiring more waiters means adding to the operational costs of the restaurant. A lot of times customers have to wait for the waiter to come to take their order, and if they want to make changes to the order, they have to call the waiter again and Wait for him to come. When they are done with their meal and want to request the cheque, they have to call for the waiter again.`,

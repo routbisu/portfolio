@@ -6,7 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faAngleDown,
   faAngleRight,
-  faCalendarAlt
+  faCalendarAlt,
+  faExternalLinkAlt
 } from '@fortawesome/free-solid-svg-icons';
 import Dropdown from '../../components/common/Dropdown/Dropdown';
 import Showcase from '../../components/common/Showcase/Showcase';
@@ -39,7 +40,8 @@ const Project = ({
     <Dropdown
       options={projects[selectedMenu].map(proj => ({
         key: proj.slug,
-        value: proj.title
+        value: proj.title,
+        external: proj.external
       }))}
       defaultValue={getSelectedProjectTitle(
         projects[selectedMenu],
@@ -78,9 +80,10 @@ const Project = ({
                         target="_blank"
                         rel="noopener noreferrer"
                         key={project.slug}
+                        className="external"
                       >
                         {project.title}
-                        <FontAwesomeIcon icon={faAngleRight} />
+                        <FontAwesomeIcon icon={faExternalLinkAlt} />
                       </a>
                     ) : (
                       <Link
@@ -122,7 +125,20 @@ const Project = ({
             />
           </div>
         )}
-        <h1>{title}</h1>
+        <h1>
+          {projectDetails.externalLink ? (
+            <a
+              href={projectDetails.externalLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {title}
+              <FontAwesomeIcon icon={faExternalLinkAlt} />
+            </a>
+          ) : (
+            title
+          )}
+        </h1>
         {duration && (
           <div className="duration">
             <FontAwesomeIcon icon={faCalendarAlt} /> {duration}
