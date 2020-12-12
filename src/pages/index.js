@@ -8,6 +8,7 @@ import { Link } from 'gatsby';
 import { getLinkUrl } from '../services/commonService';
 import Slider from 'react-slick';
 import SocialLinks from '../components/SocialLinks';
+import MetaHelmet from '../components/common/MetaHelmet';
 
 const sliderConfig = {
   arrows: false,
@@ -41,6 +42,7 @@ const sliderContent = [
 const IndexPage = () => {
   return (
     <Layout home={true}>
+      <MetaHelmet />
       <div className="home-container">
         <div className="video-container">
           <video autoPlay muted loop className="tablet-and-desktop-only">

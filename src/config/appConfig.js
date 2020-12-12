@@ -21,13 +21,28 @@ export const aboutLinks = {
 
 export const timeline = [
   {
-    time: `Jun 2019 - Present`,
-    position: `Senior Software Engineer`,
+    time: `Sep 2020 - Present`,
+    position: `Lead Frontend Engineer`,
+    company: `Coda Payments`,
+    location: `Singapore`,
+    description: [
+      `Lead the frontend engineering team at Codashop. Manage & mentor a team of 3 frontend engineers.`,
+      `Rewrite a legacy Java web application to performant pre-rendered website using Vue.`,
+      `Writing unit tests for Vue components using Jest.`,
+      `Build & maintain the CMS system for the website built with React & TypeScript.`,
+      `Improve the performance & offline capabilities of the website by using pre-rendering & caching.`,
+      `Building new features like a wallet system, customer engagement platform & a better authentication system.`
+    ]
+  },
+  {
+    time: `Jun 2019 - Aug 2020`,
+    position: `Senior Frontend Engineer`,
     company: `NE Digital`,
     location: `Singapore`,
     description: [
-      `Developed web applications using React & Gatsby - a static site generator.`,
-      `Developed control panels with features similar to WordPress for the static sites.`,
+      `Built web applications using React & Gatsby - a static site generator.`,
+      `Built control panels with features similar to WordPress for the static sites.`,
+      `Enhance the TCC staff mobile app. (https://bit.ly/tccstaff)`,
       `Exposure to server-less architecture.`,
       `Tech stack: React, Redux, Material UI, Gatsby, AWS Lambda, DynamoDB`
     ]

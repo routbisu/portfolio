@@ -26,6 +26,8 @@ const Contact = () => {
               You can reach me at
               <br />
               mail@biswa.co
+              <br />
+              <span className="phone-text">🤙🏻 +44 1244 941947</span>
             </p>
             <a href="mailto:mail@biswa.co">
               <button className="see-more animated flipInY">

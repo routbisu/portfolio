@@ -36,10 +36,6 @@ const Layout = ({ children, heading, home, showHomeButton, hideMenu }) => {
         </title>
         <link rel="shortcut icon" href={favIcon} />
         <link rel="icon" type="image/png" href={favIcon} />
-        <meta
-          name="description"
-          content="Hi, I am Biswa. I am a Web Developer. I am a self-motivated, and self-taught programmer, driven to build amazing software that I am proud of."
-        />
       </Helmet>
       <div
         className={`header ${home ? 'home' : ''} ${sticky && 'sticky-header'}`}

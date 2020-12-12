@@ -71,9 +71,39 @@ const linkTypes = {
 const projects = {
   WORK: [
     {
+      title: 'Codashop',
+      slug: 'codashop',
+      externalLink: 'https://www.codashop.com/ca',
+      duration: 'Sep 2020 - Present',
+      org: 'Coda Payments, Singapore',
+      skillSet: [
+        skills.vuejs,
+        skills.html5,
+        skills.css3,
+        skills.react,
+        skills.typescript,
+        skills.graphql,
+        skills.apollo,
+        skills.sentry
+      ],
+      description: [
+        `Coda Payments is a fintech company that helps digital content providers like Google and Tencent to monetize their products in emerging markets where credit cards aren’t widely used, using alternate payment channels like carrier billing, bank transfer, e-wallets, vouchers, and even paying cash at a retail shop.`,
+        `My team is rewriting a legacy Java web application to a modern single page application built with Vue, with techniques like performance optimization, offline capabilities with service workers & pre-rendering to drastically reduce load times by up to 40%. We are also improving and adding new features like a wallet system, customer engagement platform etc.`
+      ],
+      responsibilities: [
+        `Lead the frontend engineering team at Codashop. Manage & mentor a team of 3 frontend engineers.`,
+        `Rewrite a legacy Java web application to performant pre-rendered website using Vue.`,
+        `Writing unit tests for Vue components using Jest.`,
+        `Build & maintain the CMS system for the website built with React & TypeScript.`,
+        `Improve the performance & offline capabilities of the website by using pre-rendering & caching.`,
+        `Building new features like a wallet system, customer engagement platform & a better authentication system.`
+      ],
+    },
+    {
       title: 'SN Staff',
       slug: 'sn-staff',
-      duration: 'June 2019 - Present',
+      externalLink: 'https://apps.apple.com/us/app/the-caterpillars-cove-parent/id1481798758',
+      duration: 'Jun 2019 - Aug 2020',
       org: 'NE Digital (NTUC), Singapore',
       skillSet: [
         skills.react,
@@ -99,6 +129,10 @@ const projects = {
         `Architected a static website generation & deployment platform for schools using Gatsby.`,
         `Created a reusable library of React components and deployed it in the company intranet.`,
         `Migrated 4 school websites from legacy technologies to Gatsby & helped improved their UX & SEO.`
+      ],
+      showcase: [
+        { label: 'SkoolNet Parent App' },
+        { label: 'SkoolNet Staff App' }
       ],
       videoLink: [
         {
