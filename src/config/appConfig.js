@@ -13,7 +13,7 @@ export const menuItems = [
 export const firstJobStartDate = '24 Oct 2011';
 
 export const aboutLinks = {
-  cv: 'https://drive.google.com/file/d/14W-goOA33vA-9cdNlmaXrtWyLIrpaGJN/view',
+  cv: 'https://drive.google.com/file/d/1mcH_07844-RbkslwrY8x75Ny339jj9x1/view',
   resume: 'https://drive.google.com/open?id=1JgkaIXHlcH01ZVfYcWVgDlN-Yv6HXgnm',
   github: 'https://github.com/routbisu',
   linkedin: 'https://www.linkedin.com/in/biswaranjanrout/'
