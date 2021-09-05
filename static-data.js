@@ -19,6 +19,7 @@ const skills = {
   graphql: { name: 'Graph QL', logo: 'graphql.svg', padding: 7 },
   apollo: { name: 'Apollo Client', logo: 'apollo.svg', padding: 7 },
   sentry: { name: 'Sentry', logo: 'sentry.svg', padding: 9 },
+  storybook: { name: 'Storybook', logo: 'storybook.svg', padding: 9 },
 
   angular: { name: 'Angular', logo: 'angular.svg', padding: 8 },
   react: { name: 'React', logo: 'react.svg', padding: 4 },
@@ -71,10 +72,38 @@ const linkTypes = {
 const projects = {
   WORK: [
     {
+      title: 'Tessian Defender',
+      slug: 'tessian',
+      externalLink: 'https://www.tessian.com/defender/',
+      duration: 'Mar 2021 - Present',
+      org: 'Tessian Limited, London, United Kingdom',
+      skillSet: [
+        skills.react,
+        skills.typescript,
+        skills.html5,
+        skills.css3,
+        skills.storybook,
+        skills.nodejs,
+        skills.python,
+        skills.graphql,
+        skills.apollo,
+        skills.sentry
+      ],
+      description: [
+        `Tessian protects every business’s mission by securing the human layer. Using machine learning, Tessian automatically predicts and eliminates advanced threats on email caused by human error - like data exfiltration, accidental data loss, business email compromise and phishing attacks - with minimal disruption to employees' workflow. As a result, employees are empowered to do their best work, without security getting in their way. Founded in 2013, Tessian is backed by renowned investors like Sequoia, Accel and Balderton and has offices in San Francisco and London, and has raised a Series C round of funding in 2021.`
+      ],
+      responsibilities: [
+        `Revamping and enhancing Tessian's enterprise dashboard.`,
+        `Migrating Ruby or rails legacy code to React components for better reusability.`,
+        `Helping develop a new design system for the portal UI.`,
+        `Tech stack exposure - React, TypeScript, Node.js & Python.`
+      ]
+    },
+    {
       title: 'Codashop',
       slug: 'codashop',
       externalLink: 'https://www.codashop.com/ca',
-      duration: 'Sep 2020 - Present',
+      duration: 'Sep 2020 - Mar 2021',
       org: 'Coda Payments, Singapore',
       skillSet: [
         skills.vuejs,
@@ -97,12 +126,13 @@ const projects = {
         `Build & maintain the CMS system for the website built with React & TypeScript.`,
         `Improve the performance & offline capabilities of the website by using pre-rendering & caching.`,
         `Building new features like a wallet system, customer engagement platform & a better authentication system.`
-      ],
+      ]
     },
     {
       title: 'SN Staff',
       slug: 'sn-staff',
-      externalLink: 'https://apps.apple.com/us/app/the-caterpillars-cove-parent/id1481798758',
+      externalLink:
+        'https://apps.apple.com/us/app/the-caterpillars-cove-parent/id1481798758',
       duration: 'Jun 2019 - Aug 2020',
       org: 'NE Digital (NTUC), Singapore',
       skillSet: [
@@ -432,7 +462,8 @@ const allSkills = [
       skills.reactnative,
       skills.graphql,
       skills.apollo,
-      skills.sentry
+      skills.sentry,
+      skills.storybook
     ]
   },
   {

@@ -34,13 +34,13 @@ const About = () => {
               <img src={Profile} alt="Biswaranjan Rout" />
             </div>
             <div className="profile-description">
-              <h2>I am Biswaranjan Rout.</h2>
+              <h2>I am Biswa Rout.</h2>
               <p>
                 I have around <strong>{getExp()} years of experience</strong>{' '}
                 working as a web developer.
               </p>
               <p>
-                I live &amp; work in <strong>Singapore</strong>.
+                I live in <strong>London, United Kingdom.</strong>
               </p>
             </div>
           </div>

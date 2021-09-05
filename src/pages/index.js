@@ -51,6 +51,7 @@ const IndexPage = () => {
         </div>
         <div className="video-overlay">
           <div className="center-text">
+            <div className="avatar-section" />
             <h1 className="animated fadeInDown">
               Hi, I am <span>Biswa.</span>
             </h1>
@@ -60,7 +61,7 @@ const IndexPage = () => {
               ))}
             </Slider> */}
             <p className="animated fadeIn">
-              I am a Web Development Specialist.
+              I am a Frontend Engineer.
               <br />I love building beautiful user experiences with JavaScript,
               React &amp; Node.
             </p>

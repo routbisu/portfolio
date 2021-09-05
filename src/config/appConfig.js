@@ -21,7 +21,19 @@ export const aboutLinks = {
 
 export const timeline = [
   {
-    time: `Sep 2020 - Present`,
+    time: `Mar 2021 - Present`,
+    position: `Senior Frontend Engineer`,
+    company: `Tessian Limited`,
+    location: `London, United Kingdom`,
+    description: [
+      `Revamping and enhancing Tessian's enterprise dashboard.`,
+      `Migrating Ruby or rails legacy code to React components for better reusability.`,
+      `Helping develop a new design system for the portal UI.`,
+      `Tech stack exposure - React, TypeScript, Node.js & Python.`
+    ]
+  },
+  {
+    time: `Sep 2020 - Mar 2021`,
     position: `Lead Frontend Engineer`,
     company: `Coda Payments`,
     location: `Singapore`,
@@ -67,19 +79,6 @@ export const timeline = [
       `Worked on a SAAS product for insurance companies, brokers and re-insurers with clients in Australia, Europe, and the United States.`,
       `Got exposure to the product development life cycle.`,
       `Tech stack: Node.js, React.js, Redux, MongoDB, Microsoft Azure.`
-    ]
-  },
-  ,
-  {
-    time: `Feb 2016 - Aug 2016`,
-    position: `Senior Software Engineer`,
-    company: `Emids Technologies`,
-    location: `Bangalore, India`,
-    description: [
-      `Developed data obfuscation algorithms for a Healthcare company.`,
-      `Built a web portal to run data obfsuction jobs to generate test data.`,
-      `Travelled to the customer's datacenter to implement the data generation solution.`,
-      `Tech stack: Angular, HTML, CSS, C#, SQL Server, ASP.Net MVC`
     ]
   },
   {

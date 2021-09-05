@@ -1,11 +1,8 @@
 import React from 'react';
 import Layout from '../layout/layout';
 import BgVideo from '../images/bg-video.webm';
-import { Link } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelopeOpen } from '@fortawesome/free-regular-svg-icons';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import SocialLinks from '../components/SocialLinks';
 
 const Contact = () => {
@@ -27,7 +24,7 @@ const Contact = () => {
               <br />
               mail@biswa.co
               <br />
-              <span className="phone-text">🤙🏻 +44 1244 941947</span>
+              <span className="phone-text">🤙🏻 +44-7511709122</span>
             </p>
             <a href="mailto:mail@biswa.co">
               <button className="see-more animated flipInY">
